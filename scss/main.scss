@@ -44,11 +44,12 @@ button, input[type="submit"] {
 	padding: 16px 20px;
 	background: transparent;
 	border: 1px solid white;
-
+	color:white;
 	&:hover {
-		background: white;
+		background-color: white;
 		color: $red;
-		cursor:pointer;
+		cursor: pointer;
+		border:1px solid white;
 	}
 }
 form {
@@ -191,6 +192,7 @@ section {
 		}
 	}
 	&#company {
+		background: $tan;
 		h2, h3, p {
 			text-align: center;
 			margin: 0 auto;
