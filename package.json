@@ -1,0 +1,22 @@
+{
+  "name": "royi",
+  "version": "1.0.0",
+  "description": "web app for royioyg.com",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/codey/royi.git"
+  },
+  "author": "Carolina Yibirin-Stovall",
+  "license": "",
+  "homepage": "https://bitbucket.org/codey/royi#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-livereload": "^3.8.0",
+    "gulp-ruby-sass": "^1.0.5",
+    "gulp-watch": "^4.3.4"
+  }
+}
