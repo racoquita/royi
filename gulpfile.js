@@ -32,7 +32,15 @@ gulp.task('scss', function() {
 gulp.task('watch', function() {
 	livereload.listen();
 
+	gulp.watch('index.html', ['reload']);
 	gulp.watch('scss/**/*.scss', ['scss']);
+	gulp.watch('js/**/*.js', ['reload']);
+	gulp.watch('img/**/*', ['reload']);
+});
+
+gulp.task('reload', function() {
+	gulp.src('')
+		.pipe(livereload());
 });
 
 /****************************************
