@@ -1,3 +1,133 @@
 /****************************************
  * main.scss
  ****************************************/
+
+$red: #b33447;
+$yellow: #fb9f00 ;
+$tan: #f8f7ee;
+
+html{
+	font-family: "chaparral-pro",sans-serif;
+	font-weight: 400;
+
+}
+body{
+	margin:0;
+	font-size: 62.5%;
+}
+
+h2, h3, a, button, input[type="submit"]{
+	font-family: 'brandon-grotesque', sans-serif;
+	font-weight: 400;
+}
+a{
+	text-decoration: none;
+	display: inline-block;
+}
+p, h2{
+	max-width: 640px;
+	margin:0 auto;
+}
+p, li, a{
+	font-size: 2em;
+	line-height: 1.5em;
+}
+button, input[type="submit"]{
+	// font-size: 1.6em;
+	text-transform: uppercase;
+	padding: 16px 20px;
+	background: transparent;
+	border: 1px solid white;
+}
+form{
+	p{
+		label{
+			display: block;
+		}
+		input{
+
+		}
+		textarea{
+			resize:none;
+		}
+	}
+	
+}
+nav{
+	position: relative;
+	width: 100%;
+	height: 70px;
+	a{
+		font-weight:  700;
+		line-height: 70px;
+		&#logo{
+			max-width: 60px;
+			img{
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+}
+section{
+	position: relative;
+	overflow: hidden;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	form{
+		float:left;
+
+	}
+	&.color-bg{
+		background: $red;
+		*{
+			color:white;
+		}
+	}
+	&#intro{
+		min-height: 355px;
+		padding-top:100px;
+		button{
+			display: block;
+			margin:50px auto 0 auto;
+		}
+		p{
+
+			text-align: center;
+		}
+	}
+	&#services{
+		//940 es lo maximo 640 px de esos 940px
+		ul{
+			max-width: 940px;
+			width: 68.085106383%; // 640px
+			max-width: 640px;
+			margin: 0 auto;
+		}
+	}
+	&#tools{
+		
+		
+		.section-content{
+			max-width: 940px;
+			//width: 68.085106383%;
+			margin:0 auto;
+			overflow: hidden;
+			div{
+				float: left;
+				width:31.70212766%; //298/940px;
+				margin-left: 2.0744680851%;
+				&:nth-child(2){
+					margin-left: 0px;
+				}
+			}
+		}
+			
+		
+	}
+	&#company{
+		h2, h3{
+			text-align: center;
+		}
+	}
+}
