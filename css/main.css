@@ -24,153 +24,162 @@ h2 {
   font-size: 3.6em;
   text-align: center;
   color: #b33447;
+  text-transform: uppercase;
 }
 
-/* line 28, scss/main.scss */
+/* line 29, scss/main.scss */
 h3 {
   font-size: 2.4em;
 }
 
-/* line 31, scss/main.scss */
+/* line 32, scss/main.scss */
 a {
   text-decoration: none;
   display: inline-block;
 }
 
-/* line 36, scss/main.scss */
-p, li, a {
+/* line 37, scss/main.scss */
+p, li, a, address {
   font-size: 2em;
   line-height: 1.5em;
 }
 
-/* line 40, scss/main.scss */
+/* line 41, scss/main.scss */
 button, input[type="submit"] {
   text-transform: uppercase;
   padding: 16px 20px;
   background: transparent;
   border: 1px solid white;
 }
-/* line 46, scss/main.scss */
+/* line 47, scss/main.scss */
 button:hover, input[type="submit"]:hover {
   background: white;
   color: transparent;
 }
 
-/* line 54, scss/main.scss */
+/* line 55, scss/main.scss */
 form p label {
   display: block;
   margin-top: 20px;
 }
-/* line 58, scss/main.scss */
+/* line 59, scss/main.scss */
 form p input[type="text"] {
   height: 44px;
   display: block;
 }
-/* line 63, scss/main.scss */
+/* line 64, scss/main.scss */
 form p input, form p textarea {
   width: 100%;
 }
-/* line 66, scss/main.scss */
+/* line 67, scss/main.scss */
 form p textarea {
   resize: none;
 }
 
-/* line 72, scss/main.scss */
+/* line 73, scss/main.scss */
 nav {
   position: relative;
   width: 100%;
   height: 70px;
 }
-/* line 76, scss/main.scss */
+/* line 77, scss/main.scss */
 nav a {
   font-weight: 700;
   line-height: 70px;
 }
-/* line 79, scss/main.scss */
+/* line 80, scss/main.scss */
 nav a#logo {
   max-width: 60px;
 }
-/* line 81, scss/main.scss */
+/* line 82, scss/main.scss */
 nav a#logo img {
   display: block;
   width: 100%;
 }
 
-/* line 88, scss/main.scss */
+/* line 89, scss/main.scss */
 section {
   position: relative;
   overflow: hidden;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 93, scss/main.scss */
+/* line 94, scss/main.scss */
 section p, section h2 {
   width: 68.085106383%;
   max-width: 640px;
   margin: 0 auto;
 }
-/* line 99, scss/main.scss */
-section form {
-  float: left;
-  width: 48.936170213%;
-}
-/* line 105, scss/main.scss */
+/* line 101, scss/main.scss */
 section .section-content {
   max-width: 940px;
   margin: 0 auto;
   overflow: hidden;
 }
-/* line 111, scss/main.scss */
+/* line 107, scss/main.scss */
 section.color-bg {
   background: #b33447;
 }
-/* line 113, scss/main.scss */
+/* line 109, scss/main.scss */
 section.color-bg h2 {
   color: white;
 }
-/* line 116, scss/main.scss */
+/* line 112, scss/main.scss */
 section.color-bg * {
   color: white;
 }
-/* line 120, scss/main.scss */
+/* line 116, scss/main.scss */
 section#intro {
   min-height: 355px;
   padding-top: 100px;
 }
-/* line 123, scss/main.scss */
+/* line 119, scss/main.scss */
 section#intro button {
   display: block;
   margin: 50px auto 0 auto;
 }
-/* line 127, scss/main.scss */
+/* line 123, scss/main.scss */
 section#intro p {
   text-align: center;
 }
-/* line 134, scss/main.scss */
+/* line 130, scss/main.scss */
 section#services ul {
   max-width: 940px;
   width: 68.085106383%;
   max-width: 640px;
   margin: 0 auto;
 }
-/* line 144, scss/main.scss */
+/* line 140, scss/main.scss */
 section#tools .section-content p {
   margin-left: 0;
   width: 100%;
 }
-/* line 148, scss/main.scss */
+/* line 144, scss/main.scss */
 section#tools .section-content div {
   float: left;
-  border: 1px solid #000;
   width: 31.70212766%;
   margin-left: 2.0744680851%;
 }
-/* line 153, scss/main.scss */
+/* line 148, scss/main.scss */
 section#tools .section-content div:nth-child(2) {
   margin-left: 0px;
 }
-/* line 162, scss/main.scss */
+/* line 157, scss/main.scss */
 section#company h2, section#company h3, section#company p {
   text-align: center;
   margin: 0 auto;
+}
+/* line 161, scss/main.scss */
+section#company h3 {
+  margin-top: 65px;
+}
+/* line 166, scss/main.scss */
+section#contact form {
+  float: left;
+  width: 48.936170213%;
+}
+/* line 170, scss/main.scss */
+section#contact .locations {
+  float: right;
+  width: 41.382978723%;
 }
