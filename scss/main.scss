@@ -9,7 +9,7 @@ $grey: #494844;
 
 html {
 	font-family: "chaparral-pro", sans-serif;
-	font-weight: 400;
+	font-weight: 300;
 }
 body {
 	margin: 0;
@@ -24,6 +24,7 @@ h2 {
 	font-size: 3.6em;
 	text-align: center;
 	color: $red;
+
 	text-transform: uppercase;
 }
 h3 {
@@ -82,9 +83,7 @@ nav {
 
 	a {
 		font-weight: 700;
-		//line-height: 70px;
 		display: inline-block;
-		//width: 70px;
 		height: 70px;
 		color: $red;
 		font-size: 1.6em;
@@ -117,7 +116,7 @@ section {
 		width: 68.085106383%;
 		// 640px
 		max-width: 640px;
-		margin: 0 auto;
+		margin: 0 auto 45px auto;
 	}
 	.section-content {
 		max-width: 940px;
@@ -151,12 +150,26 @@ section {
 		h2 {
 			margin-bottom: 65px;
 		}
+		h3{
+			max-width: 640px;
+			margin: 0 auto;
+			text-align: center;
+		}
 		ul {
 			max-width: 940px;
 			width: 68.085106383%;
 			// 640px
 			max-width: 640px;
 			margin: 0 auto 65px auto;
+			li{
+				list-style-type: none;
+				padding-left: 1em; 
+    			text-indent: -0.55em;
+				&:before{
+					content: "• ";
+    				color: $red; /* or whatever color you prefer */
+				}
+			}
 		}
 	}
 	&#tools {
@@ -182,14 +195,24 @@ section {
 			text-align: center;
 			margin: 0 auto;
 		}
-		h3 {
-			margin-top: 65px;
+		h2{
+			margin-bottom: 45px;
+		}
+		p{
+			margin-bottom: 65px;
 		}
 	}
 	&#contact {
+		address{
+			font-style: normal;
+		}
 		form {
 			float: left;
-			width: 48.936170213%;
+			width: 48.936170213%; 
+			
+			p{
+				width: 100%;
+			}
 			//460 de 940px;
 		}
 		.locations {
