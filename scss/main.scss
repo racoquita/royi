@@ -16,7 +16,7 @@ body{
 	font-size: 62.5%;
 }
 
-h2, h3, a, button, input[type="submit"]{
+h2, h3, a, button, input[type="submit"], label{
 	font-family: 'brandon-grotesque', sans-serif;
 	font-weight: 400;
 }
@@ -32,10 +32,7 @@ a{
 	text-decoration: none;
 	display: inline-block;
 }
-p, h2{
-	max-width: 640px;
-	margin:0 auto;
-}
+
 p, li, a{
 	font-size: 2em;
 	line-height: 1.5em;
@@ -53,11 +50,18 @@ button, input[type="submit"]{
 }
 form{
 	p{
+		
 		label{
 			display: block;
+			margin-top: 20px;
 		}
-		input{
-
+		input[type="text"]{
+			height: 44px;
+			display: block;
+			
+		}
+		input, textarea{
+			width: 100%;
 		}
 		textarea{
 			resize:none;
@@ -86,9 +90,23 @@ section{
 	overflow: hidden;
 	padding-top: 50px;
 	padding-bottom: 50px;
+	p, h2{
+		
+		width: 68.085106383%; // 640px
+		max-width: 640px;
+		margin: 0 auto;
+	}
 	form{
 		float:left;
+		width: 48.936170213%; //460 de 940px;
 
+
+	}
+	.section-content{
+		max-width: 940px;
+		margin:0 auto;
+		overflow: hidden;
+		
 	}
 	&.color-bg{
 		background: $red;
@@ -121,13 +139,15 @@ section{
 		}
 	}
 	&#tools{
-
+		
 		.section-content{
-			max-width: 940px;
-			margin:0 auto;
-			overflow: hidden;
+			p{
+				margin-left:0;
+				width: 100%;
+			}
 			div{
 				float: left;
+				border: 1px solid #000;
 				width:31.70212766%; //298/940px;
 				margin-left: 2.0744680851%;
 				&:nth-child(2){
@@ -139,8 +159,9 @@ section{
 		
 	}
 	&#company{
-		h2, h3{
+		h2, h3, p{
 			text-align: center;
+			margin:0 auto;
 		}
 	}
 }
