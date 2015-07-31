@@ -1,25 +1,26 @@
 /****************************************
  * main.scss
  ****************************************/
-/* line 9, scss/main.scss */
+/* line 10, scss/main.scss */
 html {
   font-family: "chaparral-pro", sans-serif;
   font-weight: 400;
 }
 
-/* line 13, scss/main.scss */
+/* line 14, scss/main.scss */
 body {
   margin: 0;
   font-size: 62.5%;
+  color: #494844;
 }
 
-/* line 17, scss/main.scss */
+/* line 19, scss/main.scss */
 h2, h3, a, button, input[type="submit"], label {
   font-family: 'brandon-grotesque', sans-serif;
   font-weight: 400;
 }
 
-/* line 21, scss/main.scss */
+/* line 23, scss/main.scss */
 h2 {
   font-size: 3.6em;
   text-align: center;
@@ -27,56 +28,59 @@ h2 {
   text-transform: uppercase;
 }
 
-/* line 27, scss/main.scss */
+/* line 29, scss/main.scss */
 h3 {
   font-size: 2.4em;
 }
 
-/* line 30, scss/main.scss */
+/* line 32, scss/main.scss */
 a {
   text-decoration: none;
   display: inline-block;
 }
 
-/* line 34, scss/main.scss */
+/* line 36, scss/main.scss */
 p, li, a, address {
   font-size: 2em;
   line-height: 1.5em;
 }
 
-/* line 38, scss/main.scss */
+/* line 40, scss/main.scss */
 button, input[type="submit"] {
   text-transform: uppercase;
   padding: 16px 20px;
   background: transparent;
   border: 1px solid white;
 }
-/* line 45, scss/main.scss */
+/* line 47, scss/main.scss */
 button:hover, input[type="submit"]:hover {
   background: white;
-  color: transparent;
+  color: #b33447;
+  cursor: pointer;
 }
 
-/* line 52, scss/main.scss */
+/* line 55, scss/main.scss */
 form p label {
   display: block;
   margin-top: 20px;
 }
-/* line 56, scss/main.scss */
+/* line 59, scss/main.scss */
 form p input[type="text"] {
   height: 44px;
   display: block;
+  color: #b33447;
 }
-/* line 60, scss/main.scss */
+/* line 64, scss/main.scss */
 form p input, form p textarea {
   width: 100%;
+  border: 0;
 }
-/* line 63, scss/main.scss */
+/* line 68, scss/main.scss */
 form p textarea {
   resize: none;
 }
 
-/* line 68, scss/main.scss */
+/* line 73, scss/main.scss */
 nav {
   position: fixed;
   top: 0;
@@ -84,111 +88,121 @@ nav {
   z-index: 99;
   width: 100%;
   height: 70px;
+  padding-left: 4.5%;
   background-color: white;
 }
-/* line 77, scss/main.scss */
+/* line 83, scss/main.scss */
 nav a {
   font-weight: 700;
-  line-height: 70px;
-  width: 70px;
+  display: inline-block;
+  height: 70px;
   color: #b33447;
+  font-size: 1.6em;
+  margin-right: 45px;
+  float: left;
+  line-height: 70px;
 }
-/* line 83, scss/main.scss */
+/* line 94, scss/main.scss */
+nav a:hover {
+  color: #fb9f00;
+}
+/* line 98, scss/main.scss */
 nav a#logo {
   max-width: 60px;
+  margin-top: 20px;
 }
-/* line 86, scss/main.scss */
+/* line 103, scss/main.scss */
 nav a#logo img {
   display: block;
   width: 100%;
 }
 
-/* line 93, scss/main.scss */
+/* line 110, scss/main.scss */
 section {
   position: relative;
   overflow: hidden;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 99, scss/main.scss */
+/* line 116, scss/main.scss */
 section p, section h2 {
   width: 68.085106383%;
   max-width: 640px;
   margin: 0 auto;
 }
-/* line 105, scss/main.scss */
+/* line 122, scss/main.scss */
 section .section-content {
   max-width: 940px;
   margin: 0 auto;
   overflow: hidden;
 }
-/* line 110, scss/main.scss */
+/* line 127, scss/main.scss */
 section.color-bg {
   background: #b33447;
 }
-/* line 113, scss/main.scss */
+/* line 130, scss/main.scss */
 section.color-bg h2 {
   color: white;
 }
-/* line 116, scss/main.scss */
+/* line 133, scss/main.scss */
 section.color-bg * {
   color: white;
 }
-/* line 120, scss/main.scss */
+/* line 137, scss/main.scss */
 section#intro {
   min-height: 355px;
   padding-top: 100px;
 }
-/* line 124, scss/main.scss */
+/* line 141, scss/main.scss */
 section#intro button {
   display: block;
   margin: 50px auto 0 auto;
 }
-/* line 128, scss/main.scss */
+/* line 145, scss/main.scss */
 section#intro p {
   text-align: center;
 }
-/* line 134, scss/main.scss */
+/* line 151, scss/main.scss */
 section#services h2 {
   margin-bottom: 65px;
 }
-/* line 137, scss/main.scss */
+/* line 154, scss/main.scss */
 section#services ul {
   max-width: 940px;
   width: 68.085106383%;
   max-width: 640px;
   margin: 0 auto 65px auto;
 }
-/* line 147, scss/main.scss */
+/* line 164, scss/main.scss */
 section#tools .section-content p {
   margin-left: 0;
   width: 100%;
 }
-/* line 151, scss/main.scss */
+/* line 168, scss/main.scss */
 section#tools .section-content div {
   float: left;
   width: 31.70212766%;
   margin-left: 2.0744680851%;
 }
-/* line 157, scss/main.scss */
+/* line 174, scss/main.scss */
 section#tools .section-content div:nth-child(2) {
   margin-left: 0px;
 }
-/* line 164, scss/main.scss */
+/* line 181, scss/main.scss */
 section#company h2, section#company h3, section#company p {
   text-align: center;
   margin: 0 auto;
 }
-/* line 168, scss/main.scss */
+/* line 185, scss/main.scss */
 section#company h3 {
   margin-top: 65px;
 }
-/* line 173, scss/main.scss */
+/* line 190, scss/main.scss */
 section#contact form {
   float: left;
   width: 48.936170213%;
 }
-/* line 178, scss/main.scss */
+/* line 195, scss/main.scss */
 section#contact .locations {
   float: right;
   width: 44.382978723%;
