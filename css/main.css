@@ -109,61 +109,67 @@ section p, section h2 {
   max-width: 640px;
   margin: 0 auto;
 }
-/* line 100, scss/main.scss */
+/* line 99, scss/main.scss */
 section form {
   float: left;
   width: 48.936170213%;
 }
-/* line 106, scss/main.scss */
+/* line 105, scss/main.scss */
 section .section-content {
   max-width: 940px;
   margin: 0 auto;
   overflow: hidden;
 }
-/* line 112, scss/main.scss */
+/* line 111, scss/main.scss */
 section.color-bg {
   background: #b33447;
 }
-/* line 114, scss/main.scss */
+/* line 113, scss/main.scss */
 section.color-bg h2 {
   color: white;
 }
-/* line 117, scss/main.scss */
+/* line 116, scss/main.scss */
 section.color-bg * {
   color: white;
 }
-/* line 121, scss/main.scss */
+/* line 120, scss/main.scss */
 section#intro {
   min-height: 355px;
   padding-top: 100px;
 }
-/* line 124, scss/main.scss */
+/* line 123, scss/main.scss */
 section#intro button {
   display: block;
   margin: 50px auto 0 auto;
 }
-/* line 128, scss/main.scss */
+/* line 127, scss/main.scss */
 section#intro p {
   text-align: center;
 }
-/* line 135, scss/main.scss */
+/* line 134, scss/main.scss */
 section#services ul {
   max-width: 940px;
   width: 68.085106383%;
   max-width: 640px;
   margin: 0 auto;
 }
-/* line 146, scss/main.scss */
+/* line 144, scss/main.scss */
+section#tools .section-content p {
+  margin-left: 0;
+  width: 100%;
+}
+/* line 148, scss/main.scss */
 section#tools .section-content div {
   float: left;
+  border: 1px solid #000;
   width: 31.70212766%;
   margin-left: 2.0744680851%;
 }
-/* line 150, scss/main.scss */
+/* line 153, scss/main.scss */
 section#tools .section-content div:nth-child(2) {
   margin-left: 0px;
 }
-/* line 159, scss/main.scss */
+/* line 162, scss/main.scss */
 section#company h2, section#company h3, section#company p {
   text-align: center;
   margin: 0 auto;

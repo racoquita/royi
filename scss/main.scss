@@ -95,7 +95,6 @@ section{
 		width: 68.085106383%; // 640px
 		max-width: 640px;
 		margin: 0 auto;
-		// text-align: center;
 	}
 	form{
 		float:left;
@@ -142,9 +141,13 @@ section{
 	&#tools{
 		
 		.section-content{
-
+			p{
+				margin-left:0;
+				width: 100%;
+			}
 			div{
 				float: left;
+				border: 1px solid #000;
 				width:31.70212766%; //298/940px;
 				margin-left: 2.0744680851%;
 				&:nth-child(2){
