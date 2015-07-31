@@ -86,100 +86,106 @@ nav {
 nav a {
   font-weight: 700;
   line-height: 70px;
+  width: 70px;
+  color: #b33447;
 }
-/* line 80, scss/main.scss */
+/* line 82, scss/main.scss */
 nav a#logo {
   max-width: 60px;
 }
-/* line 82, scss/main.scss */
+/* line 84, scss/main.scss */
 nav a#logo img {
   display: block;
   width: 100%;
 }
 
-/* line 89, scss/main.scss */
+/* line 91, scss/main.scss */
 section {
   position: relative;
   overflow: hidden;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 94, scss/main.scss */
+/* line 96, scss/main.scss */
 section p, section h2 {
   width: 68.085106383%;
   max-width: 640px;
   margin: 0 auto;
 }
-/* line 101, scss/main.scss */
+/* line 103, scss/main.scss */
 section .section-content {
   max-width: 940px;
   margin: 0 auto;
   overflow: hidden;
 }
-/* line 107, scss/main.scss */
+/* line 109, scss/main.scss */
 section.color-bg {
   background: #b33447;
 }
-/* line 109, scss/main.scss */
+/* line 111, scss/main.scss */
 section.color-bg h2 {
   color: white;
 }
-/* line 112, scss/main.scss */
+/* line 114, scss/main.scss */
 section.color-bg * {
   color: white;
 }
-/* line 116, scss/main.scss */
+/* line 118, scss/main.scss */
 section#intro {
   min-height: 355px;
   padding-top: 100px;
 }
-/* line 119, scss/main.scss */
+/* line 121, scss/main.scss */
 section#intro button {
   display: block;
   margin: 50px auto 0 auto;
 }
-/* line 123, scss/main.scss */
+/* line 125, scss/main.scss */
 section#intro p {
   text-align: center;
 }
-/* line 130, scss/main.scss */
+/* line 132, scss/main.scss */
+section#services h2 {
+  margin-bottom: 65px;
+}
+/* line 135, scss/main.scss */
 section#services ul {
   max-width: 940px;
   width: 68.085106383%;
   max-width: 640px;
-  margin: 0 auto;
+  margin: 0 auto 65px auto;
 }
-/* line 140, scss/main.scss */
+/* line 145, scss/main.scss */
 section#tools .section-content p {
   margin-left: 0;
   width: 100%;
 }
-/* line 144, scss/main.scss */
+/* line 149, scss/main.scss */
 section#tools .section-content div {
   float: left;
   width: 31.70212766%;
   margin-left: 2.0744680851%;
 }
-/* line 148, scss/main.scss */
+/* line 153, scss/main.scss */
 section#tools .section-content div:nth-child(2) {
   margin-left: 0px;
 }
-/* line 157, scss/main.scss */
+/* line 162, scss/main.scss */
 section#company h2, section#company h3, section#company p {
   text-align: center;
   margin: 0 auto;
 }
-/* line 161, scss/main.scss */
+/* line 166, scss/main.scss */
 section#company h3 {
   margin-top: 65px;
 }
-/* line 166, scss/main.scss */
+/* line 171, scss/main.scss */
 section#contact form {
   float: left;
   width: 48.936170213%;
 }
-/* line 170, scss/main.scss */
+/* line 175, scss/main.scss */
 section#contact .locations {
   float: right;
-  width: 41.382978723%;
+  width: 44.382978723%;
 }

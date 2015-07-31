@@ -77,6 +77,8 @@ nav{
 	a{
 		font-weight:  700;
 		line-height: 70px;
+		width: 70px;
+		color:$red;
 		&#logo{
 			max-width: 60px;
 			img{
@@ -127,11 +129,14 @@ section{
 	}
 	&#services{
 		//940 es lo maximo 640 px de esos 940px
+		h2{
+			margin-bottom: 65px;
+		}
 		ul{
 			max-width: 940px;
 			width: 68.085106383%; // 640px
 			max-width: 640px;
-			margin: 0 auto;
+			margin: 0 auto 65px auto;
 		}
 	}
 	&#tools{
@@ -169,7 +174,7 @@ section{
 		}
 		.locations{
 			float:right;
-			width: 41.382978723%;
+			width: 44.382978723%;
 		}
 	}
 }
