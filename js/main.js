@@ -15,7 +15,7 @@ Royi.PageHandler = function() {
 	var scrollToSection = function(el) {
 		if ($(el).offset()) {
 			$('html, body').animate({
-	        	scrollTop: $(el).offset().top
+	        	scrollTop: $(el).offset().top - 70
 	    	}, 500);
 		}
 	}
