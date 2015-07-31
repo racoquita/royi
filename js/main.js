@@ -13,9 +13,11 @@ Royi.PageHandler = function() {
 	}
 
 	var scrollToSection = function(el) {
-		$('html, body').animate({
-        	scrollTop: $(el).offset().top
-    	}, 500);
+		if ($(el).offset()) {
+			$('html, body').animate({
+	        	scrollTop: $(el).offset().top
+	    	}, 500);
+		}
 	}
 
 	return {
