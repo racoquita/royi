@@ -146,6 +146,13 @@ section {
 		}
 		p {
 			text-align: center;
+			margin-top: 65px;
+		}
+	}
+	&#alliances{
+		background: $tan;
+		p{
+			float: left;
 		}
 	}
 	&#services {
@@ -157,6 +164,20 @@ section {
 			max-width: 640px;
 			margin: 0 auto;
 			text-align: center;
+		}
+		.section-content{
+			
+		}
+		a{
+		
+			position: absolute;
+			top:50%;
+			&.prev{
+				left:4.5%;
+			}
+			&.next{
+				right:4.5%;
+			}
 		}
 		ul {
 			max-width: 940px;
