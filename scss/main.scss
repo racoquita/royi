@@ -1,7 +1,7 @@
 /****************************************
  * main.scss
  ****************************************/
-
+@import 'mixins';
 $red: #b33447;
 $yellow: #fb9f00;
 $tan: #f8f7ee;
@@ -98,13 +98,14 @@ nav {
 		&#logo {
 			max-width: 60px;
 			margin-top: 20px;
-			
-			
 			img {
 				display: block;
 				width: 100%;
 			}
 		}
+	}
+	@include breakpoint(mobile) {
+		display: none;
 	}
 }
 section {
@@ -114,8 +115,7 @@ section {
 	padding-bottom: 50px;
 
 	p, h2 {
-		width: 68.085106383%;
-		// 640px
+		width: 68.085106383%; // 640px NO TOUCHY
 		max-width: 640px;
 		margin: 0 auto 45px auto;
 	}
@@ -123,6 +123,9 @@ section {
 		max-width: 940px;
 		margin: 0 auto;
 		overflow: hidden;
+		@include breakpoint(mobile) {
+			width: 80%;
+		}
 	}
 	&.color-bg {
 		background: $red;
@@ -137,7 +140,6 @@ section {
 	&#intro {
 		min-height: 355px;
 		padding-top: 100px;
-
 		button {
 			display: block;
 			margin: 50px auto 0 auto;
@@ -158,8 +160,7 @@ section {
 		}
 		ul {
 			max-width: 940px;
-			width: 68.085106383%;
-			// 640px
+			width: 68.085106383%; // 640px NO TOUCHY
 			max-width: 640px;
 			margin: 0 auto 65px auto;
 			li{
@@ -168,12 +169,13 @@ section {
     			text-indent: -0.55em;
 				&:before{
 					content: "• ";
-    				color: $red; /* or whatever color you prefer */
+    				color: $red;
 				}
 			}
 		}
 	}
 	&#tools {
+		
 		.section-content {
 			p {
 				margin-left: 0;
@@ -181,13 +183,21 @@ section {
 			}
 			div {
 				float: left;
-				width: 31.70212766%;
-				//298/940px;
+				width: 31.70212766%; //298/940px; NOOOOO TOUCHY
 				margin-left: 2.0744680851%;
 
 				&:nth-child(2) {
 					margin-left: 0px;
 				}
+				@include breakpoint(mobile) {
+					width: 100%;
+					float: none;
+					margin-left: 0%;
+				}
+			}
+			@include breakpoint(mobile) {
+				margin:0 auto;
+				max-width: 500px;
 			}
 		}
 	}
@@ -210,16 +220,20 @@ section {
 		}
 		form {
 			float: left;
-			width: 48.936170213%; 
-			
+			width: 48.936170213%;  //460 de 940px; NO TOUCHY
 			p{
 				width: 100%;
 			}
-			//460 de 940px;
+			@include breakpoint(mobile) {
+				width: 100%;
+			}
 		}
 		.locations {
 			float: right;
 			width: 44.382978723%;
+			@include breakpoint(mobile) {
+				display: none;
+			}
 		}
 	}
 }

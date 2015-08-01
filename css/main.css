@@ -114,20 +114,26 @@ nav a#logo {
   max-width: 60px;
   margin-top: 20px;
 }
-/* line 103, scss/main.scss */
+/* line 101, scss/main.scss */
 nav a#logo img {
   display: block;
   width: 100%;
 }
+@media screen and (max-width: 479px) {
+  /* line 75, scss/main.scss */
+  nav {
+    display: none;
+  }
+}
 
-/* line 110, scss/main.scss */
+/* line 111, scss/main.scss */
 section {
   position: relative;
   overflow: hidden;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 116, scss/main.scss */
+/* line 117, scss/main.scss */
 section p, section h2 {
   width: 68.085106383%;
   max-width: 640px;
@@ -139,108 +145,140 @@ section .section-content {
   margin: 0 auto;
   overflow: hidden;
 }
-/* line 127, scss/main.scss */
+@media screen and (max-width: 479px) {
+  /* line 122, scss/main.scss */
+  section .section-content {
+    width: 80%;
+  }
+}
+/* line 130, scss/main.scss */
 section.color-bg {
   background: #b33447;
 }
-/* line 130, scss/main.scss */
+/* line 133, scss/main.scss */
 section.color-bg h2 {
   color: white;
 }
-/* line 133, scss/main.scss */
+/* line 136, scss/main.scss */
 section.color-bg * {
   color: white;
 }
-/* line 137, scss/main.scss */
+/* line 140, scss/main.scss */
 section#intro {
   min-height: 355px;
   padding-top: 100px;
 }
-/* line 141, scss/main.scss */
+/* line 143, scss/main.scss */
 section#intro button {
   display: block;
   margin: 50px auto 0 auto;
 }
-/* line 145, scss/main.scss */
+/* line 147, scss/main.scss */
 section#intro p {
   text-align: center;
 }
-/* line 151, scss/main.scss */
+/* line 153, scss/main.scss */
 section#services h2 {
   margin-bottom: 65px;
 }
-/* line 154, scss/main.scss */
+/* line 156, scss/main.scss */
 section#services h3 {
   max-width: 640px;
   margin: 0 auto;
   text-align: center;
 }
-/* line 159, scss/main.scss */
+/* line 161, scss/main.scss */
 section#services ul {
   max-width: 940px;
   width: 68.085106383%;
   max-width: 640px;
   margin: 0 auto 65px auto;
 }
-/* line 165, scss/main.scss */
+/* line 166, scss/main.scss */
 section#services ul li {
   list-style-type: none;
   padding-left: 1em;
   text-indent: -0.55em;
 }
-/* line 169, scss/main.scss */
+/* line 170, scss/main.scss */
 section#services ul li:before {
   content: "• ";
   color: #b33447;
-  /* or whatever color you prefer */
 }
-/* line 178, scss/main.scss */
+/* line 180, scss/main.scss */
 section#tools .section-content p {
   margin-left: 0;
   width: 100%;
 }
-/* line 182, scss/main.scss */
+/* line 184, scss/main.scss */
 section#tools .section-content div {
   float: left;
   width: 31.70212766%;
   margin-left: 2.0744680851%;
 }
-/* line 188, scss/main.scss */
+/* line 189, scss/main.scss */
 section#tools .section-content div:nth-child(2) {
   margin-left: 0px;
 }
-/* line 194, scss/main.scss */
+@media screen and (max-width: 479px) {
+  /* line 184, scss/main.scss */
+  section#tools .section-content div {
+    width: 100%;
+    float: none;
+    margin-left: 0%;
+  }
+}
+@media screen and (max-width: 479px) {
+  /* line 179, scss/main.scss */
+  section#tools .section-content {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+}
+/* line 204, scss/main.scss */
 section#company {
   background: #f8f7ee;
 }
-/* line 196, scss/main.scss */
+/* line 206, scss/main.scss */
 section#company h2, section#company h3, section#company p {
   text-align: center;
   margin: 0 auto;
 }
-/* line 200, scss/main.scss */
+/* line 210, scss/main.scss */
 section#company h2 {
   margin-bottom: 45px;
 }
-/* line 203, scss/main.scss */
+/* line 213, scss/main.scss */
 section#company p {
   margin-bottom: 65px;
 }
-/* line 208, scss/main.scss */
+/* line 218, scss/main.scss */
 section#contact address {
   font-style: normal;
 }
-/* line 211, scss/main.scss */
+/* line 221, scss/main.scss */
 section#contact form {
   float: left;
   width: 48.936170213%;
 }
-/* line 215, scss/main.scss */
+/* line 224, scss/main.scss */
 section#contact form p {
   width: 100%;
 }
-/* line 220, scss/main.scss */
+@media screen and (max-width: 479px) {
+  /* line 221, scss/main.scss */
+  section#contact form {
+    width: 100%;
+  }
+}
+/* line 231, scss/main.scss */
 section#contact .locations {
   float: right;
   width: 44.382978723%;
+}
+@media screen and (max-width: 479px) {
+  /* line 231, scss/main.scss */
+  section#contact .locations {
+    display: none;
+  }
 }
