@@ -157,6 +157,15 @@ section {
 	}
 	&#services {
 		//940 es lo maximo 640 px de esos 940px
+		.slides{
+			position: relative;
+			height: 100%;
+			margin:0 auto;
+			min-height: 500px;
+			max-width: 940px;
+			width: 100%;
+			
+		}
 		h2 {
 			margin-bottom: 65px;
 		}
@@ -165,8 +174,32 @@ section {
 			margin: 0 auto;
 			text-align: center;
 		}
-		.section-content{
+		.slide{
 			
+			position: absolute;
+			
+			-webkit-transition: all .5s ease;
+		    -o-transition: all .5s ease;
+		    transition: all .5s ease;
+		    &.active {
+	            display: block;
+	            left: 0;
+	        }
+	        &.inactive {
+	            display: none;
+	            -webkit-transition: all 0s ease;
+	            -o-transition: all 0s ease;
+	            transition: all 0s ease;
+	            
+	        }
+	        &.left {
+	            display: block;
+	            left: -100%;
+	        }
+	        &.right {
+	            display: block;
+	            left: 100%;
+	        }
 		}
 		a{
 		

@@ -187,63 +187,99 @@ section#alliances p {
   float: left;
 }
 /* line 160, scss/main.scss */
+section#services .slides {
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+  min-height: 500px;
+  max-width: 940px;
+  width: 100%;
+}
+/* line 169, scss/main.scss */
 section#services h2 {
   margin-bottom: 65px;
 }
-/* line 163, scss/main.scss */
+/* line 172, scss/main.scss */
 section#services h3 {
   max-width: 640px;
   margin: 0 auto;
   text-align: center;
 }
-/* line 171, scss/main.scss */
+/* line 177, scss/main.scss */
+section#services .slide {
+  position: absolute;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+/* line 184, scss/main.scss */
+section#services .slide.active {
+  display: block;
+  left: 0;
+}
+/* line 188, scss/main.scss */
+section#services .slide.inactive {
+  display: none;
+  -webkit-transition: all 0s ease;
+  transition: all 0s ease;
+}
+/* line 195, scss/main.scss */
+section#services .slide.left {
+  display: block;
+  left: -100%;
+}
+/* line 199, scss/main.scss */
+section#services .slide.right {
+  display: block;
+  left: 100%;
+}
+/* line 204, scss/main.scss */
 section#services a {
   position: absolute;
   top: 50%;
 }
-/* line 175, scss/main.scss */
+/* line 208, scss/main.scss */
 section#services a.prev {
   left: 4.5%;
 }
-/* line 178, scss/main.scss */
+/* line 211, scss/main.scss */
 section#services a.next {
   right: 4.5%;
 }
-/* line 182, scss/main.scss */
+/* line 215, scss/main.scss */
 section#services ul {
   max-width: 940px;
   width: 68.085106383%;
   max-width: 640px;
   margin: 0 auto 65px auto;
 }
-/* line 187, scss/main.scss */
+/* line 220, scss/main.scss */
 section#services ul li {
   list-style-type: none;
   padding-left: 1em;
   text-indent: -0.55em;
 }
-/* line 191, scss/main.scss */
+/* line 224, scss/main.scss */
 section#services ul li:before {
   content: "• ";
   color: #b33447;
 }
-/* line 201, scss/main.scss */
+/* line 234, scss/main.scss */
 section#tools .section-content p {
   margin-left: 0;
   width: 100%;
 }
-/* line 205, scss/main.scss */
+/* line 238, scss/main.scss */
 section#tools .section-content div {
   float: left;
   width: 31.70212766%;
   margin-left: 2.0744680851%;
 }
-/* line 210, scss/main.scss */
+/* line 243, scss/main.scss */
 section#tools .section-content div:nth-child(2) {
   margin-left: 0px;
 }
 @media screen and (max-width: 479px) {
-  /* line 205, scss/main.scss */
+  /* line 238, scss/main.scss */
   section#tools .section-content div {
     width: 100%;
     float: none;
@@ -251,55 +287,55 @@ section#tools .section-content div:nth-child(2) {
   }
 }
 @media screen and (max-width: 479px) {
-  /* line 200, scss/main.scss */
+  /* line 233, scss/main.scss */
   section#tools .section-content {
     margin: 0 auto;
     max-width: 500px;
   }
 }
-/* line 225, scss/main.scss */
+/* line 258, scss/main.scss */
 section#company {
   background: #f8f7ee;
 }
-/* line 227, scss/main.scss */
+/* line 260, scss/main.scss */
 section#company h2, section#company h3, section#company p {
   text-align: center;
   margin: 0 auto;
 }
-/* line 231, scss/main.scss */
+/* line 264, scss/main.scss */
 section#company h2 {
   margin-bottom: 45px;
 }
-/* line 234, scss/main.scss */
+/* line 267, scss/main.scss */
 section#company p {
   margin-bottom: 65px;
 }
-/* line 239, scss/main.scss */
+/* line 272, scss/main.scss */
 section#contact address {
   font-style: normal;
 }
-/* line 242, scss/main.scss */
+/* line 275, scss/main.scss */
 section#contact form {
   float: left;
   width: 48.936170213%;
 }
-/* line 245, scss/main.scss */
+/* line 278, scss/main.scss */
 section#contact form p {
   width: 100%;
 }
 @media screen and (max-width: 479px) {
-  /* line 242, scss/main.scss */
+  /* line 275, scss/main.scss */
   section#contact form {
     width: 100%;
   }
 }
-/* line 252, scss/main.scss */
+/* line 285, scss/main.scss */
 section#contact .locations {
   float: right;
   width: 44.382978723%;
 }
 @media screen and (max-width: 479px) {
-  /* line 252, scss/main.scss */
+  /* line 285, scss/main.scss */
   section#contact .locations {
     display: none;
   }
