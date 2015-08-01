@@ -66,7 +66,7 @@ $(document).ready(function() {
 	});
 
 	$('.prev').click(function(e) {
-		alert('prev')
+
 		e.preventDefault();
 		Royi.changeSlide(currentSlide - 1);
 	});
