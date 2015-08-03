@@ -6,8 +6,7 @@ var slideCount = $('.slides .slide').length;
 var currentSlide = 1;
 var dir = 'next';
 
-Royi.PageHandler = function() {
-
+Royi.PageHandler = function() {	
 	var init = function() {
 		$('nav').on('click', 'a.menu-item', function(e) {
 			e.preventDefault();
@@ -16,13 +15,13 @@ Royi.PageHandler = function() {
 
 		$('.next').click(function(e) {
 			e.preventDefault();
-			Royi.changeSlide(currentSlide + 1);
+			changeSlide(currentSlide + 1);
 		});
 
 		$('.prev').click(function(e) {
 
 			e.preventDefault();
-			Royi.changeSlide(currentSlide - 1);
+			changeSlide(currentSlide - 1);
 		});
 	}
 
@@ -34,37 +33,38 @@ Royi.PageHandler = function() {
 		}
 	}
 
+	var changeSlide = function(num) {
+		dir = num > currentSlide ? 'next' : 'prev';
+		currentSlide = num;
+
+		if(dir == 'next') {
+			
+			$('.slide.inactive').removeClass('inactive').addClass('right');
+			$('.slide.active').removeClass('active').addClass('left');
+			
+			setTimeout(function(){
+				$('.slide.right').removeClass('right').addClass('active');
+			}, 100);
+			setTimeout(function(){
+				$('.slide.left').removeClass('left').addClass('inactive');
+			}, 500);
+		}
+		if(dir == 'prev') {
+			
+			$('.slide.inactive').removeClass('inactive').addClass('left');
+			$('.slide.active').removeClass('active').addClass('right');
+			
+			setTimeout(function(){
+				$('.slide.left').removeClass('left').addClass('active');
+			}, 100);
+			setTimeout(function(){
+				$('.slide.right').removeClass('right').addClass('inactive');
+			}, 500);
+		}
+	}
+
 	return {
 		init: init
-	}
-}
-Royi.changeSlide = function (num) {
-	dir = num > currentSlide ? 'next' : 'prev';
-	currentSlide = num;
-
-	if(dir == 'next') {
-		
-		$('.slide.inactive').removeClass('inactive').addClass('right');
-		$('.slide.active').removeClass('active').addClass('left');
-		
-		setTimeout(function(){
-			$('.slide.right').removeClass('right').addClass('active');
-		}, 100);
-		setTimeout(function(){
-			$('.slide.left').removeClass('left').addClass('inactive');
-		}, 500);
-	}
-	if(dir == 'prev') {
-		
-		$('.slide.inactive').removeClass('inactive').addClass('left');
-		$('.slide.active').removeClass('active').addClass('right');
-		
-		setTimeout(function(){
-			$('.slide.left').removeClass('left').addClass('active');
-		}, 100);
-		setTimeout(function(){
-			$('.slide.right').removeClass('right').addClass('inactive');
-		}, 500);
 	}
 }
 
