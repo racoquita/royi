@@ -16,6 +16,7 @@ $function: ease-out;
 $fill: both;
 $visibility: hidden;
 
+@import 'animate/icons';
 @import "animate/properties";
 @import "animate/fadeInLeft";
 @import "animate/fadeOutLeft";
@@ -45,6 +46,12 @@ body {
 	margin: 0;
 	font-size: 62.5%;
 	color:$grey;
+}
+body.en :lang(es) {
+	display: none;
+}
+body.es :lang(en) {
+	display: none;
 }
 h2, h3, a, button, input[type="submit"], label {
 	font-family: 'brandon-grotesque', sans-serif;
@@ -111,20 +118,26 @@ nav {
 	height: 70px;
 	padding-left:4.5%;
 	background-color: white;
+	box-sizing: border-box;
 
 	a {
+		float: left;
+	}
+	span {
+		float: right;
+	}
+	a, span {
 		font-weight: 700;
 		display: inline-block;
 		height: 70px;
 		color: $red;
 		font-size: 1.6em;
 		margin-right: 45px;
-		float: left;
 		line-height: 70px;
+
     	&:hover{
     		color:$yellow;
     	}
-
 		&#logo {
 			max-width: 60px;
 			margin-top: 20px;

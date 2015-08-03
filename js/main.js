@@ -11,6 +11,11 @@ Royi.PageHandler = function() {
 	var isAnimating = false;
 
 	var init = function() {
+		$('.language').on('click', function(e) {
+			console.log($(e.currentTarget).attr('lang'));
+			$('body').removeClass().addClass($(e.currentTarget).data('lang'));
+		});
+
 		$('nav').on('click', 'a.menu-item', function(e) {
 			e.preventDefault();
 			scrollToSection($(e.currentTarget).attr('href'));

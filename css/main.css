@@ -91,7 +91,7 @@
             transform: translateX(100px);
   }
 }
-/* line 25, scss/main.scss */
+/* line 26, scss/main.scss */
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
@@ -109,7 +109,7 @@
   backface-visibility: hidden;
 }
 
-/* line 28, scss/main.scss */
+/* line 29, scss/main.scss */
 .fadeOutLeft {
   -webkit-animation-name: fadeOutLeft;
   animation-name: fadeOutLeft;
@@ -127,7 +127,7 @@
   backface-visibility: hidden;
 }
 
-/* line 31, scss/main.scss */
+/* line 32, scss/main.scss */
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
@@ -145,7 +145,7 @@
   backface-visibility: hidden;
 }
 
-/* line 34, scss/main.scss */
+/* line 35, scss/main.scss */
 .fadeOutRight {
   -webkit-animation-name: fadeOutRight;
   animation-name: fadeOutRight;
@@ -164,26 +164,36 @@
 }
 
 /* styles */
-/* line 40, scss/main.scss */
+/* line 41, scss/main.scss */
 html {
   font-family: "chaparral-pro", sans-serif;
   font-weight: 300;
 }
 
-/* line 44, scss/main.scss */
+/* line 45, scss/main.scss */
 body {
   margin: 0;
   font-size: 62.5%;
   color: #494844;
 }
 
-/* line 49, scss/main.scss */
+/* line 50, scss/main.scss */
+body.en :lang(es) {
+  display: none;
+}
+
+/* line 53, scss/main.scss */
+body.es :lang(en) {
+  display: none;
+}
+
+/* line 56, scss/main.scss */
 h2, h3, a, button, input[type="submit"], label {
   font-family: 'brandon-grotesque', sans-serif;
   font-weight: 400;
 }
 
-/* line 53, scss/main.scss */
+/* line 60, scss/main.scss */
 h2 {
   font-size: 3.6em;
   text-align: center;
@@ -191,24 +201,24 @@ h2 {
   text-transform: uppercase;
 }
 
-/* line 60, scss/main.scss */
+/* line 67, scss/main.scss */
 h3 {
   font-size: 2.4em;
 }
 
-/* line 63, scss/main.scss */
+/* line 70, scss/main.scss */
 a {
   text-decoration: none;
   display: inline-block;
 }
 
-/* line 67, scss/main.scss */
+/* line 74, scss/main.scss */
 p, li, a, address {
   font-size: 2em;
   line-height: 1.5em;
 }
 
-/* line 71, scss/main.scss */
+/* line 78, scss/main.scss */
 button, input[type="submit"] {
   text-transform: uppercase;
   padding: 16px 20px;
@@ -216,7 +226,7 @@ button, input[type="submit"] {
   border: 1px solid white;
   color: white;
 }
-/* line 78, scss/main.scss */
+/* line 85, scss/main.scss */
 button:hover, input[type="submit"]:hover {
   background-color: white;
   color: #b33447;
@@ -224,28 +234,28 @@ button:hover, input[type="submit"]:hover {
   border: 1px solid white;
 }
 
-/* line 87, scss/main.scss */
+/* line 94, scss/main.scss */
 form p label {
   display: block;
   margin-top: 20px;
 }
-/* line 91, scss/main.scss */
+/* line 98, scss/main.scss */
 form p input[type="text"] {
   height: 44px;
   display: block;
   color: #b33447;
 }
-/* line 96, scss/main.scss */
+/* line 103, scss/main.scss */
 form p input, form p textarea {
   width: 100%;
   border: 0;
 }
-/* line 100, scss/main.scss */
+/* line 107, scss/main.scss */
 form p textarea {
   resize: none;
 }
 
-/* line 105, scss/main.scss */
+/* line 112, scss/main.scss */
 nav {
   position: fixed;
   top: 0;
@@ -255,100 +265,108 @@ nav {
   height: 70px;
   padding-left: 4.5%;
   background-color: white;
+  box-sizing: border-box;
 }
-/* line 115, scss/main.scss */
+/* line 123, scss/main.scss */
 nav a {
+  float: left;
+}
+/* line 126, scss/main.scss */
+nav span {
+  float: right;
+}
+/* line 129, scss/main.scss */
+nav a, nav span {
   font-weight: 700;
   display: inline-block;
   height: 70px;
   color: #b33447;
   font-size: 1.6em;
   margin-right: 45px;
-  float: left;
   line-height: 70px;
 }
-/* line 124, scss/main.scss */
-nav a:hover {
+/* line 138, scss/main.scss */
+nav a:hover, nav span:hover {
   color: #fb9f00;
 }
-/* line 128, scss/main.scss */
-nav a#logo {
+/* line 141, scss/main.scss */
+nav a#logo, nav span#logo {
   max-width: 60px;
   margin-top: 20px;
 }
-/* line 131, scss/main.scss */
-nav a#logo img {
+/* line 144, scss/main.scss */
+nav a#logo img, nav span#logo img {
   display: block;
   width: 100%;
 }
 @media screen and (max-width: 479px) {
-  /* line 105, scss/main.scss */
+  /* line 112, scss/main.scss */
   nav {
     display: none;
   }
 }
 
-/* line 141, scss/main.scss */
+/* line 154, scss/main.scss */
 section {
   position: relative;
   overflow: hidden;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 147, scss/main.scss */
+/* line 160, scss/main.scss */
 section p, section h2 {
   width: 68.085106383%;
   max-width: 640px;
   margin: 0 auto 45px auto;
 }
-/* line 152, scss/main.scss */
+/* line 165, scss/main.scss */
 section .section-content {
   max-width: 940px;
   margin: 0 auto;
   overflow: hidden;
 }
 @media screen and (max-width: 479px) {
-  /* line 152, scss/main.scss */
+  /* line 165, scss/main.scss */
   section .section-content {
     width: 80%;
   }
 }
-/* line 160, scss/main.scss */
+/* line 173, scss/main.scss */
 section.color-bg {
   background: #b33447;
 }
-/* line 163, scss/main.scss */
+/* line 176, scss/main.scss */
 section.color-bg h2 {
   color: white;
 }
-/* line 166, scss/main.scss */
+/* line 179, scss/main.scss */
 section.color-bg * {
   color: white;
 }
-/* line 170, scss/main.scss */
+/* line 183, scss/main.scss */
 section#intro {
   min-height: 355px;
   padding-top: 100px;
 }
-/* line 173, scss/main.scss */
+/* line 186, scss/main.scss */
 section#intro button {
   display: block;
   margin: 50px auto 0 auto;
 }
-/* line 177, scss/main.scss */
+/* line 190, scss/main.scss */
 section#intro p {
   text-align: center;
   margin-top: 65px;
 }
-/* line 182, scss/main.scss */
+/* line 195, scss/main.scss */
 section#alliances {
   background: #f8f7ee;
 }
-/* line 184, scss/main.scss */
+/* line 197, scss/main.scss */
 section#alliances p {
   float: left;
 }
-/* line 190, scss/main.scss */
+/* line 203, scss/main.scss */
 section#services .slides {
   position: relative;
   height: 100%;
@@ -357,17 +375,17 @@ section#services .slides {
   max-width: 940px;
   width: 100%;
 }
-/* line 199, scss/main.scss */
+/* line 212, scss/main.scss */
 section#services h2 {
   margin-bottom: 65px;
 }
-/* line 202, scss/main.scss */
+/* line 215, scss/main.scss */
 section#services h3 {
   max-width: 640px;
   margin: 0 auto;
   text-align: center;
 }
-/* line 207, scss/main.scss */
+/* line 220, scss/main.scss */
 section#services .icon {
   width: 200px;
   height: 200px;
@@ -375,80 +393,80 @@ section#services .icon {
   border-radius: 100px;
   margin: 0 auto;
 }
-/* line 214, scss/main.scss */
+/* line 227, scss/main.scss */
 section#services .slide, section#services .clone {
   position: absolute;
 }
-/* line 217, scss/main.scss */
+/* line 230, scss/main.scss */
 section#services .slide.active, section#services .clone.active {
   display: block;
   left: 0;
 }
-/* line 221, scss/main.scss */
+/* line 234, scss/main.scss */
 section#services .slide.inactive, section#services .clone.inactive {
   display: none;
   -webkit-transition: all 0s ease;
   transition: all 0s ease;
 }
-/* line 228, scss/main.scss */
+/* line 241, scss/main.scss */
 section#services .slide.left, section#services .clone.left {
   display: block;
   left: -100%;
   border: 1px solid #000;
 }
-/* line 233, scss/main.scss */
+/* line 246, scss/main.scss */
 section#services .slide.right, section#services .clone.right {
   display: block;
   left: 100%;
 }
-/* line 238, scss/main.scss */
+/* line 251, scss/main.scss */
 section#services span {
   position: absolute;
   top: 50%;
 }
-/* line 242, scss/main.scss */
+/* line 255, scss/main.scss */
 section#services span:nth-of-type(1) {
   left: 4.5%;
 }
-/* line 245, scss/main.scss */
+/* line 258, scss/main.scss */
 section#services span:nth-of-type(2) {
   right: 4.5%;
 }
-/* line 249, scss/main.scss */
+/* line 262, scss/main.scss */
 section#services ul {
   max-width: 940px;
   width: 68.085106383%;
   max-width: 640px;
   margin: 0 auto 65px auto;
 }
-/* line 254, scss/main.scss */
+/* line 267, scss/main.scss */
 section#services ul li {
   list-style-type: none;
   padding-left: 1em;
   text-indent: -0.55em;
 }
-/* line 258, scss/main.scss */
+/* line 271, scss/main.scss */
 section#services ul li:before {
   content: "• ";
   color: #b33447;
 }
-/* line 268, scss/main.scss */
+/* line 281, scss/main.scss */
 section#tools .section-content p {
   margin-left: 0;
   width: 100%;
 }
-/* line 272, scss/main.scss */
+/* line 285, scss/main.scss */
 section#tools .section-content div {
   float: left;
   width: 31.70212766%;
   margin-left: 2.0744680851%;
 }
-/* line 277, scss/main.scss */
+/* line 290, scss/main.scss */
 section#tools .section-content div:nth-child(2) {
   margin-left: 0px;
 }
 @media screen and (max-width: 479px) {
-  /* line 272, scss/main.scss */
+  /* line 285, scss/main.scss */
   section#tools .section-content div {
     width: 100%;
     float: none;
@@ -456,55 +474,55 @@ section#tools .section-content div:nth-child(2) {
   }
 }
 @media screen and (max-width: 479px) {
-  /* line 267, scss/main.scss */
+  /* line 280, scss/main.scss */
   section#tools .section-content {
     margin: 0 auto;
     max-width: 500px;
   }
 }
-/* line 292, scss/main.scss */
+/* line 305, scss/main.scss */
 section#company {
   background: #f8f7ee;
 }
-/* line 294, scss/main.scss */
+/* line 307, scss/main.scss */
 section#company h2, section#company h3, section#company p {
   text-align: center;
   margin: 0 auto;
 }
-/* line 298, scss/main.scss */
+/* line 311, scss/main.scss */
 section#company h2 {
   margin-bottom: 45px;
 }
-/* line 301, scss/main.scss */
+/* line 314, scss/main.scss */
 section#company p {
   margin-bottom: 65px;
 }
-/* line 306, scss/main.scss */
+/* line 319, scss/main.scss */
 section#contact address {
   font-style: normal;
 }
-/* line 309, scss/main.scss */
+/* line 322, scss/main.scss */
 section#contact form {
   float: left;
   width: 48.936170213%;
 }
-/* line 312, scss/main.scss */
+/* line 325, scss/main.scss */
 section#contact form p {
   width: 100%;
 }
 @media screen and (max-width: 479px) {
-  /* line 309, scss/main.scss */
+  /* line 322, scss/main.scss */
   section#contact form {
     width: 100%;
   }
 }
-/* line 319, scss/main.scss */
+/* line 332, scss/main.scss */
 section#contact .locations {
   float: right;
   width: 44.382978723%;
 }
 @media screen and (max-width: 479px) {
-  /* line 319, scss/main.scss */
+  /* line 332, scss/main.scss */
   section#contact .locations {
     display: none;
   }
