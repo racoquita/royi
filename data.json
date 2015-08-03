@@ -1,0 +1,91 @@
+{ "competencias":[
+    {
+    	"title":"Gerencia Integrada de Activos", 
+    	"items":[
+	    	{ 
+	    		"item" : " Elaboración de escenarios de exploración, selección técnico-económica y diseño de la estrategia óptima para abordar los proyectos de inversión exploratoria así como el plan conceptual de su posible futuro desarrollo." 
+	    	},
+	    	{
+	    		"item": "Elaboración de escenarios de desarrollo de campos, selección técnico-económica y diseño de la estrategia óptima para abordar los proyectos de inversión de explotación, así como el plan conceptual de su posible futuro desarrollo. "
+	    	},
+	    	{	
+	    		"item" : "Identificación de incertidumbres técnicas y económicas de mayor impacto y elaboración del plan de mitigación de riesgos consecuentes."
+	    	},
+	    	{
+	    		"item" : "Construcción, de requerirse, del modelo probabilístico integrado y sus componentes de",
+	    		"subitems" : [ "Subsuelo", "Volumétrico." , "Pozos.", "Instalaciones.", "Ambiente y seguridad industrial.", "Económico.", "Evaluación, jerarquización y pre-selección de escenarios."   ]
+	    	}
+    	]
+    }, 
+    {
+    	"title": "Exploración",
+    	"items" :[
+    		{
+    			"item": "Interpretación sísmica 2D y 3D. "
+    		},
+    		{
+    			"item" : "Evaluación de Potencial, Análisis de Cuencas y Sistema Petrolero."
+    		},
+    		{
+    			"item" : "Análisis geoquímico de evolución termal, roca madre y de migración de fluidos"
+    		},
+    		{
+    			"item": "Análisis Tectono-Estratigráfico y Sedimentológico de Cuencas sedimentarias."
+    		},
+    		{
+    			"item": "Análisis de yacimientos naturalmente fracturados."
+    		},
+    		{
+    			"item" : "Evaluación de formaciones y petrofísica."
+    		},
+    		{
+    			"item" : "Análisis de registros convencionales y especiales."
+    		},
+    		{
+    			"item" : "Análisis sedimentológico y de estratigrafía secuencial."
+    		},
+    		{
+    			"item" : "Estudios y análisis de afloramientos, núcleos, muestra de canal y pared."
+    		}
+    	]
+    },
+    {
+    	"title" : "Producción",
+    	"items" : [
+    		{
+    			"item" : "Caracterización estática y dinámica de yacimientos"
+    		},
+    		{
+    			"item" : "Desarrollo de Campos."
+    		},
+    		{
+    			"item" : "Evaluación de campos"
+    		},
+    		{
+    			"item" : "Productividad de pozos"
+    		}
+    	]
+    },
+    {
+    	"title" : "Perforación",
+    	"items" : [
+    		{
+    			"item" : "Planeación, diseño y evaluación de Intervención de Pozos"
+    		},
+    		{
+    			"item" : "Evaluación postmosterm de Perforación de Pozos"
+    		},
+    		{
+    			"item" : "Identificación y evaluación de Tecnologías"
+    		}
+    	]
+    },
+    {
+    	"title" : "Instalaciones",
+    	"items" : [
+    		{
+    			"item" : "Diseño y Optimización de Instalaciones de Producción de aceite y gas"
+    		}
+    	]
+    }
+]}
