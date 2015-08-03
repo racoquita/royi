@@ -188,7 +188,7 @@ body.es :lang(en) {
 }
 
 /* line 56, scss/main.scss */
-h2, h3, a, button, input[type="submit"], label {
+h2, h3, a, button, input[type="submit"], label, span {
   font-family: 'brandon-grotesque', sans-serif;
   font-weight: 400;
 }
