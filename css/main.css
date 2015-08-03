@@ -5,6 +5,9 @@
 /* animation variables */
 /* line 1, scss/animate/_icons.scss */
 .icon {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
   background-image: url(../img/icons.png);
   background-repeat: no-repeat;
   background-size: 6000px 1000px;
@@ -20,32 +23,32 @@
       -ms-transform: scale(0.5);
           transform: scale(0.5);
 }
-/* line 11, scss/animate/_icons.scss */
+/* line 14, scss/animate/_icons.scss */
 .icon.iam {
   background-position: 0 0px;
 }
-/* line 14, scss/animate/_icons.scss */
+/* line 17, scss/animate/_icons.scss */
 .icon.exploration {
   background-position: 0 -200px;
 }
-/* line 17, scss/animate/_icons.scss */
+/* line 20, scss/animate/_icons.scss */
 .icon.production {
   background-position: 0 -400px;
 }
-/* line 20, scss/animate/_icons.scss */
+/* line 23, scss/animate/_icons.scss */
 .icon.drilling {
   background-position: 0 -600px;
 }
-/* line 23, scss/animate/_icons.scss */
+/* line 26, scss/animate/_icons.scss */
 .icon.surface {
   background-position: 0 -800px;
 }
-/* line 27, scss/animate/_icons.scss */
+/* line 30, scss/animate/_icons.scss */
 .icon.show {
   -webkit-animation-name: iconIn;
           animation-name: iconIn;
 }
-/* line 31, scss/animate/_icons.scss */
+/* line 34, scss/animate/_icons.scss */
 .icon.hide {
   -webkit-animation-name: iconOut;
           animation-name: iconOut;
@@ -420,30 +423,30 @@ section.color-bg {
 section.color-bg h2, section.color-bg p {
   color: white;
 }
-/* line 183, scss/main.scss */
+/* line 180, scss/main.scss */
 section#intro {
   min-height: 355px;
   padding-top: 100px;
 }
-/* line 186, scss/main.scss */
+/* line 183, scss/main.scss */
 section#intro button {
   display: block;
   margin: 50px auto 0 auto;
 }
-/* line 190, scss/main.scss */
+/* line 187, scss/main.scss */
 section#intro p {
   text-align: center;
   margin-top: 65px;
 }
-/* line 195, scss/main.scss */
+/* line 192, scss/main.scss */
 section#alliances {
   background: #f8f7ee;
 }
-/* line 197, scss/main.scss */
+/* line 194, scss/main.scss */
 section#alliances p {
   float: left;
 }
-/* line 203, scss/main.scss */
+/* line 200, scss/main.scss */
 section#services .slides {
   position: relative;
   height: 100%;
@@ -453,74 +456,67 @@ section#services .slides {
   width: 68.085106383%;
   width: 100%;
 }
-/* line 213, scss/main.scss */
+/* line 210, scss/main.scss */
 section#services h2 {
   margin-bottom: 65px;
 }
-/* line 216, scss/main.scss */
+/* line 213, scss/main.scss */
 section#services h3 {
   max-width: 640px;
   margin: 0 auto;
   text-align: center;
 }
-/* line 221, scss/main.scss */
-section#services .icon {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  margin: 0 auto;
-}
-/* line 227, scss/main.scss */
+/* line 218, scss/main.scss */
 section#services .slide, section#services .clone {
   position: absolute;
   width: 100%;
 }
-/* line 231, scss/main.scss */
+/* line 222, scss/main.scss */
 section#services span {
   position: absolute;
   top: 50%;
 }
-/* line 235, scss/main.scss */
+/* line 226, scss/main.scss */
 section#services span:nth-of-type(1) {
   left: 4.5%;
 }
-/* line 238, scss/main.scss */
+/* line 229, scss/main.scss */
 section#services span:nth-of-type(2) {
   right: 4.5%;
 }
-/* line 242, scss/main.scss */
+/* line 233, scss/main.scss */
 section#services ul {
   max-width: 640px;
   margin: 0 auto 65px auto;
 }
-/* line 248, scss/main.scss */
+/* line 239, scss/main.scss */
 section#services ul li {
   list-style-type: none;
   padding-left: 1em;
   text-indent: -0.55em;
 }
-/* line 252, scss/main.scss */
+/* line 243, scss/main.scss */
 section#services ul li:before {
   content: "• ";
   color: #b33447;
 }
-/* line 262, scss/main.scss */
+/* line 253, scss/main.scss */
 section#tools .section-content p {
   margin-left: 0;
   width: 100%;
 }
-/* line 266, scss/main.scss */
+/* line 257, scss/main.scss */
 section#tools .section-content div {
   float: left;
   width: 31.70212766%;
   margin-left: 2.0744680851%;
 }
-/* line 271, scss/main.scss */
+/* line 262, scss/main.scss */
 section#tools .section-content div:nth-child(2) {
   margin-left: 0px;
 }
 @media screen and (max-width: 479px) {
-  /* line 266, scss/main.scss */
+  /* line 257, scss/main.scss */
   section#tools .section-content div {
     width: 100%;
     float: none;
@@ -528,55 +524,55 @@ section#tools .section-content div:nth-child(2) {
   }
 }
 @media screen and (max-width: 479px) {
-  /* line 261, scss/main.scss */
+  /* line 252, scss/main.scss */
   section#tools .section-content {
     margin: 0 auto;
     max-width: 500px;
   }
 }
-/* line 286, scss/main.scss */
+/* line 277, scss/main.scss */
 section#company {
   background: #f8f7ee;
 }
-/* line 288, scss/main.scss */
+/* line 279, scss/main.scss */
 section#company h2, section#company h3, section#company p {
   text-align: center;
   margin: 0 auto;
 }
-/* line 292, scss/main.scss */
+/* line 283, scss/main.scss */
 section#company h2 {
   margin-bottom: 45px;
 }
-/* line 295, scss/main.scss */
+/* line 286, scss/main.scss */
 section#company p {
   margin-bottom: 65px;
 }
-/* line 300, scss/main.scss */
+/* line 291, scss/main.scss */
 section#contact address {
   font-style: normal;
 }
-/* line 303, scss/main.scss */
+/* line 294, scss/main.scss */
 section#contact form {
   float: left;
   width: 48.936170213%;
 }
-/* line 306, scss/main.scss */
+/* line 297, scss/main.scss */
 section#contact form p {
   width: 100%;
 }
 @media screen and (max-width: 479px) {
-  /* line 303, scss/main.scss */
+  /* line 294, scss/main.scss */
   section#contact form {
     width: 100%;
   }
 }
-/* line 313, scss/main.scss */
+/* line 304, scss/main.scss */
 section#contact .locations {
   float: right;
   width: 44.382978723%;
 }
 @media screen and (max-width: 479px) {
-  /* line 313, scss/main.scss */
+  /* line 304, scss/main.scss */
   section#contact .locations {
     display: none;
   }
