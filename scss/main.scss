@@ -2,10 +2,40 @@
  * main.scss
  ****************************************/
 @import 'mixins';
+
 $red: #b33447;
 $yellow: #fb9f00;
 $tan: #f8f7ee;
 $grey: #494844;
+
+/* animation variables */
+
+$duration: .5s;
+$delay: 0s;
+$function: ease-out;
+$fill: both;
+$visibility: hidden;
+
+@import "animate/properties";
+@import "animate/fadeInLeft";
+@import "animate/fadeOutLeft";
+@import "animate/fadeInRight";
+@import "animate/fadeOutRight";
+
+.fadeInLeft {
+	@include fadeInLeft($duration, $delay, $function, $fill, $visibility);
+}
+.fadeOutLeft {
+	@include fadeOutLeft($duration, $delay, $function, $fill, $visibility);
+}
+.fadeInRight {
+	@include fadeInRight($duration, $delay, $function, $fill, $visibility);
+}
+.fadeOutRight {
+	@include fadeOutRight($duration, $delay, $function, $fill, $visibility);
+}
+
+/* styles */
 
 html {
 	font-family: "chaparral-pro", sans-serif;
@@ -174,13 +204,16 @@ section {
 			margin: 0 auto;
 			text-align: center;
 		}
-		.slide{
-			
+		.icon {
+			width: 200px;
+			height: 200px;
+			border: 1px solid;
+			border-radius: 100px;
+			margin: 0 auto;
+		}
+		.slide, .clone {
 			position: absolute;
-			
-			-webkit-transition: all .5s ease;
-		    -o-transition: all .5s ease;
-		    transition: all .5s ease;
+
 		    &.active {
 	            display: block;
 	            left: 0;
@@ -202,14 +235,14 @@ section {
 	            left: 100%;
 	        }
 		}
-		a{
-		
+		span {
 			position: absolute;
 			top:50%;
-			&.prev{
+			
+			&:nth-of-type(1) {
 				left:4.5%;
 			}
-			&.next{
+			&:nth-of-type(2) {
 				right:4.5%;
 			}
 		}

@@ -2,26 +2,34 @@
  * declare the royi namespace
  */
 var Royi = Royi || {};
-var slideCount = $('.slides .slide').length;
-var currentSlide = 1;
-var dir = 'next';
 
-Royi.PageHandler = function() {	
+Royi.PageHandler = function() {
+
+	var slideCount = slides.length - 1;
+	var currentSlide = 0;
+	var dir = 'right';
+	var isAnimating = false;
+
 	var init = function() {
 		$('nav').on('click', 'a.menu-item', function(e) {
 			e.preventDefault();
 			scrollToSection($(e.currentTarget).attr('href'));
 		});
 
-		$('.next').click(function(e) {
+		$('.arrow').on('click', function(e) {
 			e.preventDefault();
-			changeSlide(currentSlide + 1);
-		});
 
-		$('.prev').click(function(e) {
+			if (!isAnimating) {
+				dir = $(e.currentTarget).data('dir');
+				
+				if (dir == 'next') {
+					currentSlide != slideCount ? currentSlide++ : currentSlide = 0;				
+				} else {
+					currentSlide != 0 ? currentSlide-- : currentSlide = slideCount;	
+				}
 
-			e.preventDefault();
-			changeSlide(currentSlide - 1);
+				changeSlide();
+			}
 		});
 	}
 
@@ -33,34 +41,46 @@ Royi.PageHandler = function() {
 		}
 	}
 
-	var changeSlide = function(num) {
-		dir = num > currentSlide ? 'next' : 'prev';
-		currentSlide = num;
+	var changeSlide = function() {
+		isAnimating = true;
 
-		if(dir == 'next') {
-			
-			$('.slide.inactive').removeClass('inactive').addClass('right');
-			$('.slide.active').removeClass('active').addClass('left');
-			
-			setTimeout(function(){
-				$('.slide.right').removeClass('right').addClass('active');
-			}, 100);
-			setTimeout(function(){
-				$('.slide.left').removeClass('left').addClass('inactive');
-			}, 500);
-		}
-		if(dir == 'prev') {
-			
-			$('.slide.inactive').removeClass('inactive').addClass('left');
-			$('.slide.active').removeClass('active').addClass('right');
-			
-			setTimeout(function(){
-				$('.slide.left').removeClass('left').addClass('active');
-			}, 100);
-			setTimeout(function(){
-				$('.slide.right').removeClass('right').addClass('inactive');
-			}, 500);
-		}
+		getSlide(function(clone) {
+			var anim = dir == 'prev' ? 'fadeOutLeft' : 'fadeOutRight';
+
+			$('.slide').addClass(anim);
+			$('.slides').append(clone);
+
+			iconHandler();
+
+			setTimeout(function() {
+				$('.slide').remove();
+				$('.clone').addClass('slide').removeClass('clone fadeInRight fadeInLeft');
+				isAnimating = false;
+			}, 1000);
+		});
+	}
+
+	var getSlide = function(callback) {
+		var slide = slides[currentSlide];
+		var items = '';
+		var anim = dir == 'prev' ? 'fadeInRight' : 'fadeInLeft';
+
+		$.each(slide.items, function(i, item) {
+			items += '<li>' + item + '</li>';
+		});
+
+		var clone = $(
+			'<div class="clone animate '+ anim +'"> \
+				<h3>'+ slide.title +'</h3> \
+				<ul>' + items + '</ul> \
+			</div>'
+		);
+
+		callback(clone);
+	}
+
+	var iconHandler = function() {
+		console.log('handle icon');
 	}
 
 	return {
