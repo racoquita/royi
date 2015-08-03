@@ -16,9 +16,6 @@
           animation-iteration-count: 1;
   -webkit-animation-timing-function: steps(15, end);
           animation-timing-function: steps(15, end);
-  -webkit-transform: scale(0.5);
-      -ms-transform: scale(0.5);
-          transform: scale(0.5);
 }
 /* line 11, scss/animate/_icons.scss */
 .icon.iam {
