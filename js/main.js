@@ -13,6 +13,17 @@ Royi.PageHandler = function() {
 			e.preventDefault();
 			scrollToSection($(e.currentTarget).attr('href'));
 		});
+
+		$('.next').click(function(e) {
+			e.preventDefault();
+			Royi.changeSlide(currentSlide + 1);
+		});
+
+		$('.prev').click(function(e) {
+
+			e.preventDefault();
+			Royi.changeSlide(currentSlide - 1);
+		});
 	}
 
 	var scrollToSection = function(el) {
@@ -56,20 +67,9 @@ Royi.changeSlide = function (num) {
 		}, 500);
 	}
 }
+
 $(document).ready(function() {
 	Royi.pageHandler = new Royi.PageHandler();
 	Royi.pageHandler.init();
-
-	$('.next').click(function(e) {
-		e.preventDefault();
-		Royi.changeSlide(currentSlide + 1);
-	});
-
-	$('.prev').click(function(e) {
-
-		e.preventDefault();
-		Royi.changeSlide(currentSlide - 1);
-	});
-
 });
 
