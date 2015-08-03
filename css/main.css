@@ -176,8 +176,8 @@
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
   -webkit-animation-timing-function: ease-out;
@@ -194,8 +194,8 @@
 .fadeOutLeft {
   -webkit-animation-name: fadeOutLeft;
   animation-name: fadeOutLeft;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
   -webkit-animation-timing-function: ease-out;
@@ -212,8 +212,8 @@
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
   -webkit-animation-timing-function: ease-out;
@@ -230,8 +230,8 @@
 .fadeOutRight {
   -webkit-animation-name: fadeOutRight;
   animation-name: fadeOutRight;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
   -webkit-animation-timing-function: ease-out;
