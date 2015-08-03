@@ -6,7 +6,7 @@
 @-webkit-keyframes fadeInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-20px);
+    -webkit-transform: translateX(-100px);
   }
   100% {
     opacity: 1;
@@ -16,8 +16,8 @@
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-20px);
-            transform: translateX(-20px);
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
   }
   100% {
     opacity: 1;
@@ -32,7 +32,7 @@
   }
   100% {
     opacity: 0;
-    -webkit-transform: translateX(-20px);
+    -webkit-transform: translateX(-100px);
   }
 }
 @keyframes fadeOutLeft {
@@ -43,14 +43,14 @@
   }
   100% {
     opacity: 0;
-    -webkit-transform: translateX(-20px);
-            transform: translateX(-20px);
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
   }
 }
 @-webkit-keyframes fadeInRight {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(20px);
+    -webkit-transform: translateX(100px);
   }
   100% {
     opacity: 1;
@@ -60,8 +60,8 @@
 @keyframes fadeInRight {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(20px);
-            transform: translateX(20px);
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
   }
   100% {
     opacity: 1;
@@ -76,7 +76,7 @@
   }
   100% {
     opacity: 0;
-    -webkit-transform: translateX(20px);
+    -webkit-transform: translateX(100px);
   }
 }
 @keyframes fadeOutRight {
@@ -87,8 +87,8 @@
   }
   100% {
     opacity: 0;
-    -webkit-transform: translateX(20px);
-            transform: translateX(20px);
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
   }
 }
 /* line 25, scss/main.scss */
