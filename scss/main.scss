@@ -173,12 +173,12 @@ section {
 	&.color-bg {
 		background: $red;
 
-		h2 {
+		h2, p {
 			color: white;
 		}
-		* {
-			color: white;
-		}
+		// * {
+		// 	color: white;
+		// }
 	}
 	&#intro {
 		min-height: 355px;
@@ -206,6 +206,7 @@ section {
 			margin:0 auto;
 			min-height: 500px;
 			max-width: 940px;
+			width: 68.085106383%; // 640px NO TOUCHY
 			width: 100%;
 			
 		}
@@ -225,27 +226,7 @@ section {
 		}
 		.slide, .clone {
 			position: absolute;
-
-		    &.active {
-	            display: block;
-	            left: 0;
-	        }
-	        &.inactive {
-	            display: none;
-	            -webkit-transition: all 0s ease;
-	            -o-transition: all 0s ease;
-	            transition: all 0s ease;
-	            
-	        }
-	        &.left {
-	            display: block;
-	            left: -100%;
-	            border: 1px solid #000;
-	        }
-	        &.right {
-	            display: block;
-	            left: 100%;
-	        }
+			width: 100%;
 		}
 		span {
 			position: absolute;
@@ -259,10 +240,11 @@ section {
 			}
 		}
 		ul {
-			max-width: 940px;
-			width: 68.085106383%; // 640px NO TOUCHY
+			//max-width: 940px;
+			//width: 68.085106383%; // 640px NO TOUCHY
 			max-width: 640px;
 			margin: 0 auto 65px auto;
+			
 			li{
 				list-style-type: none;
 				padding-left: 1em; 
