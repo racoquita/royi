@@ -9,11 +9,15 @@ Royi.PageHandler = function() {
 	var currentSlide = 0;
 	var dir = 'right';
 	var isAnimating = false;
+	var iconStates = ['iam', 'exploration', 'production', 'drilling', 'surface'];
 
 	var init = function() {
 		$('.language').on('click', function(e) {
-			console.log($(e.currentTarget).attr('lang'));
 			$('body').removeClass().addClass($(e.currentTarget).data('lang'));
+		});
+
+		$('#services h2').on('click', function(e) {
+			$('.icon').toggleClass('show hide');
 		});
 
 		$('nav').on('click', 'a.menu-item', function(e) {
@@ -85,7 +89,11 @@ Royi.PageHandler = function() {
 	}
 
 	var iconHandler = function() {
-		console.log('handle icon');
+		$('.icon').toggleClass('show hide');
+
+		setTimeout(function() {
+			$('.icon').removeClass('iam exploration production drilling surface').addClass(iconStates[currentSlide]).toggleClass('show hide');
+		}, 500);
 	}
 
 	return {

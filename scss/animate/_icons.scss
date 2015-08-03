@@ -1,0 +1,52 @@
+.icon {
+	background-image: url(../img/icons.png);
+	background-repeat: no-repeat;
+	background-size: 6000px 1000px;
+	animation-duration: .5s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+	animation-timing-function: steps(15, end);
+	transform: scale(.5);
+
+	&.iam {
+		background-position: 0 0px;
+	}
+	&.exploration {
+		background-position: 0 -200px;
+	}
+	&.production {
+		background-position: 0 -400px;
+	}
+	&.drilling {
+		background-position: 0 -600px;
+	}
+	&.surface {
+		background-position: 0 -800px;
+	}
+
+	&.show {
+		animation-name: iconIn;
+	}
+
+	&.hide {
+		animation-name: iconOut;
+	}
+}
+
+@keyframes iconIn {
+	0% {
+		background-position-x: 0;
+	}
+	100% {
+		background-position-x: -3000px;
+	}
+}
+
+@keyframes iconOut {
+	0% {
+		background-position-x: -3000px;
+	}
+	100% {
+		background-position-x: -6000px;
+	}
+}
