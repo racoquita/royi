@@ -98,7 +98,8 @@ form {
 		input[type="text"] {
 			height: 44px;
 			display: block;
-			color:$red;
+			color:$grey;
+			padding-left: 10px;
 		}
 		input, textarea {
 			width: 100%;
@@ -106,6 +107,7 @@ form {
 		}
 		textarea {
 			resize: none;
+			padding-left: 10px;
 		}
 	}
 }
