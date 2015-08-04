@@ -23,10 +23,14 @@ Royi.PageHandler = function() {
 		});
 		$('.dots a').on('click', function(e){
 			e.preventDefault();
-			currentSlide = $(this).attr('href');
-			//$(e.currentTarget).siblings().removeClass('active')
-			//$(e.currentTarget).addClass('active')
-			changeSlide();
+			if($(e.currentTarget).hasClass('active')){
+				return
+			}else{
+				currentSlide = $(this).attr('href');
+				
+				changeSlide();
+				$(e.currentTarget).addClass('active');
+			}
 		});
 
 		$('nav').on('click', 'a.menu-item', function(e) {
@@ -82,7 +86,7 @@ Royi.PageHandler = function() {
 
 				isAnimating = false;
 				
-			}, 1000);
+			}, 750);
 		});
 	}
 
