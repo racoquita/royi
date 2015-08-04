@@ -219,6 +219,10 @@ section {
 			max-width: 940px;
 			width: 68.085106383%; // 640px NO TOUCHY
 			width: 100%;
+			@include breakpoint(tablet) {
+				min-height: 660px;
+			}
+
 			
 		}
 		h2 {
@@ -232,6 +236,7 @@ section {
 		.slide, .clone {
 			position: absolute;
 			width: 100%;
+			margin-top: 30px;
 		}
 		.dots{
 			position: relative;
@@ -280,6 +285,11 @@ section {
     				color: $red;
 				}
 			}
+			@include breakpoint(tablet) {
+				margin:0 auto;
+				max-width: 500px;
+			}
+
 		}
 	}
 	&#tools {
