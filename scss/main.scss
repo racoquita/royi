@@ -134,9 +134,12 @@ nav {
 		font-size: 1.6em;
 		margin-right: 45px;
 		line-height: 70px;
-
-    	&:hover{
+		&:hover{
+			cursor: pointer;
+		}
+    	&:hover, &.active{
     		color:$yellow;
+    		
     	}
 		&#logo {
 			max-width: 60px;
@@ -173,7 +176,7 @@ section {
 	&.color-bg {
 		background: $red;
 
-		h2, p {
+		h2, p, h3, address{
 			color: white;
 		}
 	}
@@ -192,7 +195,13 @@ section {
 	&#alliances{
 		background: $tan;
 		p{
-			float: left;
+			//float: left;
+			margin-top: 0;
+		
+			img{
+				display: block;
+				margin:0 auto;
+			}
 		}
 	}
 	&#services {
@@ -228,6 +237,9 @@ section {
 			}
 			&:nth-of-type(2) {
 				right:4.5%;
+			}
+			&:hover{
+				cursor:pointer;
 			}
 		}
 		ul {

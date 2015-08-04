@@ -20,7 +20,14 @@ Royi.PageHandler = function() {
 			$('.icon').toggleClass('show hide');
 		});
 
+		$('.intro-contact').on('click', function(e){
+			scrollToSection($(this).attr('href'));
+		});
+
 		$('nav').on('click', 'a.menu-item', function(e) {
+			e.preventDefault();
+			$(this).siblings().removeClass('active');
+			$(this).addClass('active');
 			scrollToSection($(e.currentTarget).attr('href'));
 		});
 
