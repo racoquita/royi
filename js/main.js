@@ -16,10 +16,6 @@ Royi.PageHandler = function() {
 			$('body').removeClass().addClass($(e.currentTarget).data('lang'));
 		});
 
-		$('#services h2').on('click', function(e) {
-			$('.icon').toggleClass('show hide');
-		});
-
 		$('.intro-contact').on('click', function(e){
 			scrollToSection($(this).attr('href'));
 		});
