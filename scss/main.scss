@@ -134,10 +134,12 @@ nav {
 		font-size: 1.6em;
 		margin-right: 45px;
 		line-height: 70px;
-
-    	&:hover{
+		&:hover{
+			cursor: pointer;
+		}
+    	&:hover, &.active{
     		color:$yellow;
-    		cursor: pointer;
+    		
     	}
 		&#logo {
 			max-width: 60px;

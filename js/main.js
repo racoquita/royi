@@ -20,12 +20,15 @@ Royi.PageHandler = function() {
 			$('.icon').toggleClass('show hide');
 		});
 		$('.intro-contact').on('click', function(e){
-			scrollToSection($(e.currentTarget).attr('href'));
+
+			scrollToSection($(this).attr('href'));
 		});
 
 		$('nav').on('click', 'a.menu-item', function(e) {
 			e.preventDefault();
-			scrollToSection($(this).attr('href'));
+			$(this).siblings().removeClass('active');
+			$(this).addClass('active');
+			scrollToSection($(e.currentTarget).attr('href'));
 		});
 
 		$('.arrow').on('click', function(e) {
