@@ -228,6 +228,24 @@ section {
 			position: absolute;
 			width: 100%;
 		}
+		.dots{
+			position: relative;
+			z-index: 45;
+			margin:0 auto;
+			max-width: 640px;
+			text-align: center;
+			a{
+				display: inline-block;
+				width: 10px;
+				height: 10px;
+				background: $grey;
+				border-radius: 50%;
+				&.active{
+					background: transparent;
+					border: 1px solid $grey;
+				}
+			}
+		}
 		span {
 			position: absolute;
 			top:50%;

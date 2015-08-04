@@ -12,6 +12,8 @@ Royi.PageHandler = function() {
 	var iconStates = ['iam', 'exploration', 'production', 'drilling', 'surface'];
 
 	var init = function() {
+		$('.dots a:nth-child('+ (currentSlide + 1) +')').addClass('active');
+
 		$('.language').on('click', function(e) {
 			$('body').removeClass().addClass($(e.currentTarget).data('lang'));
 		});
@@ -22,6 +24,13 @@ Royi.PageHandler = function() {
 		$('.intro-contact').on('click', function(e){
 
 			scrollToSection($(this).attr('href'));
+		});
+		$('.dots a').on('click', function(e){
+			e.preventDefault();
+			currentSlide = $(this).attr('href');
+			//$(e.currentTarget).siblings().removeClass('active')
+			//$(e.currentTarget).addClass('active')
+			changeSlide();
 		});
 
 		$('nav').on('click', 'a.menu-item', function(e) {
@@ -68,11 +77,15 @@ Royi.PageHandler = function() {
 			$('.slides').append(clone);
 
 			iconHandler();
+			$('.dots a').removeClass('active');
+			$('.dots a:nth-child('+ (currentSlide + 1) +')').addClass('active');
 
 			setTimeout(function() {
 				$('.slide').remove();
 				$('.clone').addClass('slide').removeClass('clone fadeInRight fadeInLeft');
+
 				isAnimating = false;
+				
 			}, 1000);
 		});
 	}
