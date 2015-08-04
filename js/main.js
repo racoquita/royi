@@ -21,7 +21,6 @@ Royi.PageHandler = function() {
 		});
 
 		$('nav').on('click', 'a.menu-item', function(e) {
-			e.preventDefault();
 			scrollToSection($(e.currentTarget).attr('href'));
 		});
 
