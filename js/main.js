@@ -19,10 +19,13 @@ Royi.PageHandler = function() {
 		$('#services h2').on('click', function(e) {
 			$('.icon').toggleClass('show hide');
 		});
+		$('.intro-contact').on('click', function(e){
+			scrollToSection($(e.currentTarget).attr('href'));
+		});
 
 		$('nav').on('click', 'a.menu-item', function(e) {
 			e.preventDefault();
-			scrollToSection($(e.currentTarget).attr('href'));
+			scrollToSection($(this).attr('href'));
 		});
 
 		$('.arrow').on('click', function(e) {
