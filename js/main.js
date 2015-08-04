@@ -71,7 +71,7 @@ Royi.PageHandler = function() {
 		isAnimating = true;
 
 		getSlide(function(clone) {
-			var anim = dir == 'prev' ? 'fadeOutLeft' : 'fadeOutRight';
+			var anim = dir == 'prev' ? 'fadeOutRight' : 'fadeOutRight';
 
 			$('.slide').addClass(anim);
 			$('.slides').append(clone);
