@@ -40,6 +40,8 @@ Royi.PageHandler = function() {
 				changeSlide();
 			}
 		});
+
+		changeSlide();
 	}
 
 	var scrollToSection = function(el) {
@@ -71,17 +73,26 @@ Royi.PageHandler = function() {
 
 	var getSlide = function(callback) {
 		var slide = slides[currentSlide];
-		var items = '';
+		var spanish_items = '';
+		var english_items = '';
 		var anim = dir == 'prev' ? 'fadeInRight' : 'fadeInLeft';
 
-		$.each(slide.items, function(i, item) {
-			items += '<li>' + item + '</li>';
+		$.each(slide.spanish.items, function(i, item) {
+			spanish_items += '<li>' + item + '</li>';
+		});
+
+		$.each(slide.english.items, function(i, item) {
+			english_items += '<li>' + item + '</li>';
 		});
 
 		var clone = $(
-			'<div class="clone animate '+ anim +'"> \
-				<h3>'+ slide.title +'</h3> \
-				<ul>' + items + '</ul> \
+			'<div class="clone animate '+ anim +'" lang="es"> \
+				<h3>'+ slide.spanish.title +'</h3> \
+				<ul>' + spanish_items + '</ul> \
+			</div> \
+			<div class="clone animate '+ anim +'" lang="en"> \
+				<h3>'+ slide.english.title +'</h3> \
+				<ul>' + english_items + '</ul> \
 			</div>'
 		);
 
