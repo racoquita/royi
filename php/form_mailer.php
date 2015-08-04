@@ -1,12 +1,17 @@
 <?php
 
-	print_r($_POST);
-
-	if (isset($_POST['email']))
+	if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['message']))
 	{
-		print_r($_POST['email']);
+		$admin_email = "info@royioyg.com";
+		$name 		 = $_POST['name'];
+		$email 		 = $_POST['email'];
+		$message 	 = $_POST['message'];
+
+		mail($admin_email, "$name", $message, "From:" . $email);
+
+		echo 'Thank you for contacting us!';
 	}
 	else
 	{
-		print_r('nada');
+		echo 'nada';
 	}
