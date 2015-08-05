@@ -1,0 +1,10 @@
+{
+    "name": "royi",
+    "require": {
+        "phpmailer/phpmailer": "~5.2" 
+    },
+    "config": {
+        "vendor-dir": "php/vendor"
+    },
+    "minimum-stability": "stable"
+}

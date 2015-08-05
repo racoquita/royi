@@ -1,17 +1,15 @@
 <?php
 
-	if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['message']))
-	{
-		$admin_email = "info@royioyg.com";
-		$name 		 = $_POST['name'];
-		$email 		 = $_POST['email'];
-		$message 	 = $_POST['message'];
+	require 'vendor/autoload.php';
 
-		mail($admin_email, "$name", $message, "From:" . $email);
+	$mail = new PHPMailer;
 
-		echo 'Thank you for contacting us!';
-	}
-	else
-	{
-		echo 'nada';
-	}
+	$mail->isSMTP();
+	$mail->Host = 'http://royioyg.com.s208945.gridserver.com/';
+	$mail->SMTPAuth = true;
+	$mail->Username = 'info@royioyg.com';
+	$mail->Password = 'mTr0y10y@stm';
+	$mail->SMTPSecure = 'tls';
+	$mail->Port = 587;
+
+	print_r($mail);
