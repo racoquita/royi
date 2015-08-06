@@ -2,14 +2,32 @@
 
 	require 'vendor/autoload.php';
 
-	$mail = new PHPMailer;
+	if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['message']))
+	{
+		$mail = new PHPMailer;
 
-	$mail->isSMTP();
-	$mail->Host = 'http://royioyg.com.s208945.gridserver.com/';
-	$mail->SMTPAuth = true;
-	$mail->Username = 'info@royioyg.com';
-	$mail->Password = 'mTr0y10y@stm';
-	$mail->SMTPSecure = 'tls';
-	$mail->Port = 587;
+		$mail->AddAddress("rstovall@me.com", "Richard Stovall");
+		$mail->AddAddress("info@royioyg.com");
 
-	print_r($mail);
+		$mail->Host    = "localhost";
+		$mail->From    = $_POST['email'];
+		$mail->Subject = $_POST['name'] . ' has sent Royi a message';
+		$mail->Body    = $_POST['message'];
+
+		if(!$mail->Send())
+		{
+		   echo "<p>Message could not be sent.</p>";
+		   echo "<p>Mailer Error: " . $mail->ErrorInfo . "</p>";
+		   exit;
+		}
+
+		header('Location: /');
+	}
+	else
+	{
+		echo "<p>Message could not be sent.</p>";
+		echo "<p>Please fill out all form fields</p>";
+		exit;
+	}
+
+		

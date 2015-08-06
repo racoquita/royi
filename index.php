@@ -1,3 +1,11 @@
+<?php 
+
+    require 'php/vendor/autoload.php';
+
+    $builder = new Gregwar\Captcha\CaptchaBuilder;
+
+?>
+
 <!DOCTYPE html>
 <html>
 
