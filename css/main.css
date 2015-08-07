@@ -316,30 +316,35 @@ button:hover, input[type="submit"]:hover {
   border: 1px solid white;
 }
 
-/* line 94, scss/main.scss */
+/* line 92, scss/main.scss */
+input {
+  outline: none;
+}
+
+/* line 97, scss/main.scss */
 form p label {
   display: block;
   margin-top: 20px;
 }
-/* line 98, scss/main.scss */
+/* line 101, scss/main.scss */
 form p input[type="text"] {
   height: 44px;
   display: block;
   color: #494844;
   padding-left: 10px;
 }
-/* line 104, scss/main.scss */
+/* line 107, scss/main.scss */
 form p input, form p textarea {
   width: 100%;
   border: 0;
 }
-/* line 108, scss/main.scss */
+/* line 111, scss/main.scss */
 form p textarea {
   resize: none;
   padding-left: 10px;
 }
 
-/* line 114, scss/main.scss */
+/* line 117, scss/main.scss */
 nav {
   position: fixed;
   top: 0;
@@ -351,15 +356,15 @@ nav {
   background-color: white;
   box-sizing: border-box;
 }
-/* line 125, scss/main.scss */
+/* line 128, scss/main.scss */
 nav a {
   float: left;
 }
-/* line 128, scss/main.scss */
+/* line 131, scss/main.scss */
 nav span {
   float: right;
 }
-/* line 131, scss/main.scss */
+/* line 134, scss/main.scss */
 nav a, nav span {
   font-weight: 700;
   display: inline-block;
@@ -369,99 +374,99 @@ nav a, nav span {
   margin-right: 45px;
   line-height: 70px;
 }
-/* line 139, scss/main.scss */
+/* line 142, scss/main.scss */
 nav a:hover, nav span:hover {
   cursor: pointer;
 }
-/* line 142, scss/main.scss */
+/* line 145, scss/main.scss */
 nav a:hover, nav a.active, nav span:hover, nav span.active {
   color: #fb9f00;
 }
-/* line 146, scss/main.scss */
+/* line 149, scss/main.scss */
 nav a#logo, nav span#logo {
   max-width: 60px;
   margin-top: 20px;
 }
-/* line 149, scss/main.scss */
+/* line 152, scss/main.scss */
 nav a#logo img, nav span#logo img {
   display: block;
   width: 100%;
 }
 @media screen and (max-width: 479px) {
-  /* line 114, scss/main.scss */
+  /* line 117, scss/main.scss */
   nav {
     display: none;
   }
 }
 
-/* line 159, scss/main.scss */
+/* line 162, scss/main.scss */
 section {
   position: relative;
   overflow: hidden;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
 }
-/* line 165, scss/main.scss */
+/* line 168, scss/main.scss */
 section p, section h2 {
   width: 68.085106383%;
   max-width: 640px;
   margin: 0 auto 45px auto;
 }
-/* line 170, scss/main.scss */
+/* line 173, scss/main.scss */
 section .section-content {
   max-width: 940px;
   margin: 0 auto;
   overflow: hidden;
 }
 @media screen and (max-width: 479px) {
-  /* line 170, scss/main.scss */
+  /* line 173, scss/main.scss */
   section .section-content {
     width: 80%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 170, scss/main.scss */
+  /* line 173, scss/main.scss */
   section .section-content {
     width: 90%;
   }
 }
-/* line 181, scss/main.scss */
+/* line 184, scss/main.scss */
 section.color-bg {
   background: #b33447;
 }
-/* line 184, scss/main.scss */
+/* line 187, scss/main.scss */
 section.color-bg h2, section.color-bg p, section.color-bg h3, section.color-bg address {
   color: white;
 }
-/* line 188, scss/main.scss */
+/* line 191, scss/main.scss */
 section#intro {
   min-height: 355px;
   padding-top: 100px;
 }
-/* line 191, scss/main.scss */
+/* line 194, scss/main.scss */
 section#intro button {
   display: block;
   margin: 50px auto 0 auto;
 }
-/* line 195, scss/main.scss */
+/* line 198, scss/main.scss */
 section#intro p {
   text-align: center;
   margin-top: 65px;
 }
-/* line 200, scss/main.scss */
+/* line 203, scss/main.scss */
 section#alliances {
   background: #f8f7ee;
 }
-/* line 202, scss/main.scss */
+/* line 205, scss/main.scss */
 section#alliances p {
   margin-top: 0;
 }
-/* line 206, scss/main.scss */
+/* line 209, scss/main.scss */
 section#alliances p img {
   display: block;
   margin: 0 auto;
 }
-/* line 214, scss/main.scss */
+/* line 217, scss/main.scss */
 section#services .slides {
   position: relative;
   height: 100%;
@@ -472,28 +477,28 @@ section#services .slides {
   width: 100%;
 }
 @media screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 214, scss/main.scss */
+  /* line 217, scss/main.scss */
   section#services .slides {
     min-height: 660px;
   }
 }
-/* line 228, scss/main.scss */
+/* line 231, scss/main.scss */
 section#services h2 {
   margin-bottom: 65px;
 }
-/* line 231, scss/main.scss */
+/* line 234, scss/main.scss */
 section#services h3 {
   max-width: 640px;
   margin: 0 auto;
   text-align: center;
 }
-/* line 236, scss/main.scss */
+/* line 239, scss/main.scss */
 section#services .slide, section#services .clone {
   position: absolute;
   width: 100%;
   margin-top: 30px;
 }
-/* line 241, scss/main.scss */
+/* line 244, scss/main.scss */
 section#services .dots {
   position: relative;
   z-index: 45;
@@ -501,7 +506,7 @@ section#services .dots {
   max-width: 640px;
   text-align: center;
 }
-/* line 247, scss/main.scss */
+/* line 250, scss/main.scss */
 section#services .dots a {
   display: inline-block;
   width: 10px;
@@ -509,70 +514,70 @@ section#services .dots a {
   background: #494844;
   border-radius: 50%;
 }
-/* line 253, scss/main.scss */
+/* line 256, scss/main.scss */
 section#services .dots a.active {
   background: transparent;
   border: 1px solid #494844;
 }
-/* line 259, scss/main.scss */
+/* line 262, scss/main.scss */
 section#services span {
   position: absolute;
   top: 50%;
   z-index: 45;
 }
-/* line 263, scss/main.scss */
+/* line 266, scss/main.scss */
 section#services span:nth-of-type(1) {
   left: 4.5%;
 }
-/* line 266, scss/main.scss */
+/* line 269, scss/main.scss */
 section#services span:nth-of-type(2) {
   right: 4.5%;
 }
-/* line 269, scss/main.scss */
+/* line 272, scss/main.scss */
 section#services span:hover {
   cursor: pointer;
 }
-/* line 273, scss/main.scss */
+/* line 276, scss/main.scss */
 section#services ul {
   max-width: 640px;
   margin: 0 auto 65px auto;
 }
-/* line 279, scss/main.scss */
+/* line 282, scss/main.scss */
 section#services ul li {
   list-style-type: none;
   padding-left: 1em;
   text-indent: -0.55em;
 }
-/* line 283, scss/main.scss */
+/* line 286, scss/main.scss */
 section#services ul li:before {
   content: "• ";
   color: #b33447;
 }
 @media screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 273, scss/main.scss */
+  /* line 276, scss/main.scss */
   section#services ul {
     margin: 0 auto;
     max-width: 500px;
   }
 }
-/* line 299, scss/main.scss */
+/* line 302, scss/main.scss */
 section#tools .section-content p {
   margin-left: 0;
   width: 100%;
 }
-/* line 303, scss/main.scss */
+/* line 306, scss/main.scss */
 section#tools .section-content div {
   float: left;
   max-width: 940px;
   width: 31.70212766%;
   margin-left: 2.0744680851%;
 }
-/* line 309, scss/main.scss */
+/* line 312, scss/main.scss */
 section#tools .section-content div:nth-child(3) {
   margin-left: 0px;
 }
 @media screen and (max-width: 479px) {
-  /* line 303, scss/main.scss */
+  /* line 306, scss/main.scss */
   section#tools .section-content div {
     width: 100%;
     float: none;
@@ -580,55 +585,55 @@ section#tools .section-content div:nth-child(3) {
   }
 }
 @media screen and (max-width: 479px) {
-  /* line 297, scss/main.scss */
+  /* line 300, scss/main.scss */
   section#tools .section-content {
     margin: 0 auto;
     max-width: 500px;
   }
 }
-/* line 326, scss/main.scss */
+/* line 329, scss/main.scss */
 section#company {
   background: #f8f7ee;
 }
-/* line 328, scss/main.scss */
+/* line 331, scss/main.scss */
 section#company h2, section#company h3, section#company p {
   text-align: center;
   margin: 0 auto;
 }
-/* line 332, scss/main.scss */
+/* line 335, scss/main.scss */
 section#company h2 {
   margin-bottom: 45px;
 }
-/* line 335, scss/main.scss */
+/* line 338, scss/main.scss */
 section#company p {
   margin-bottom: 65px;
 }
-/* line 340, scss/main.scss */
+/* line 343, scss/main.scss */
 section#contact address {
   font-style: normal;
 }
-/* line 343, scss/main.scss */
+/* line 346, scss/main.scss */
 section#contact form {
   float: left;
   width: 48.936170213%;
 }
-/* line 346, scss/main.scss */
+/* line 349, scss/main.scss */
 section#contact form p {
   width: 100%;
 }
 @media screen and (max-width: 479px) {
-  /* line 343, scss/main.scss */
+  /* line 346, scss/main.scss */
   section#contact form {
     width: 100%;
   }
 }
-/* line 353, scss/main.scss */
+/* line 356, scss/main.scss */
 section#contact .locations {
   float: right;
   width: 44.382978723%;
 }
 @media screen and (max-width: 479px) {
-  /* line 353, scss/main.scss */
+  /* line 356, scss/main.scss */
   section#contact .locations {
     display: none;
   }

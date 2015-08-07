@@ -2,32 +2,35 @@
 
 	require 'vendor/autoload.php';
 
-	if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['message']))
+	if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest')
 	{
-		$mail = new PHPMailer;
-
-		$mail->AddAddress("rstovall@me.com", "Richard Stovall");
-		$mail->AddAddress("info@royioyg.com");
-
-		$mail->Host    = "localhost";
-		$mail->From    = $_POST['email'];
-		$mail->Subject = $_POST['name'] . ' has sent Royi a message';
-		$mail->Body    = $_POST['message'];
-
-		if(!$mail->Send())
+		if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['message']))
 		{
-		   echo "<p>Message could not be sent.</p>";
-		   echo "<p>Mailer Error: " . $mail->ErrorInfo . "</p>";
-		   exit;
-		}
+			$mail = new PHPMailer;
 
-		header('Location: /');
+			$mail->AddAddress("rstovall@me.com", "Richard Stovall");
+			$mail->AddAddress("info@royioyg.com");
+
+			$mail->Host    = "localhost";
+			$mail->From    = $_POST['email'];
+			$mail->Subject = $_POST['name'] . ' has sent Royi a message';
+			$mail->Body    = $_POST['message'];
+
+			if(!$mail->Send())
+			{
+				echo json_encode(array('success' => false, 'message' => 'Message could not be sent'));
+				exit;				
+			}
+			
+			echo json_encode(array('success' => true));
+		}
+		else
+		{
+			echo json_encode(array('success' => false, 'message' => 'Please fill out all form fields'));
+			exit;
+		}
 	}
 	else
 	{
-		echo "<p>Message could not be sent.</p>";
-		echo "<p>Please fill out all form fields</p>";
-		exit;
-	}
-
-		
+		die();
+	}	

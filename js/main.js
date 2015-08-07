@@ -56,7 +56,39 @@ Royi.PageHandler = function() {
 			}
 		});
 
+		$('#contact input[type="submit"]').on('click', function(e) {
+			e.preventDefault();
+			sendForm();
+		});
+
 		changeSlide();
+	}
+
+	var sendForm = function() {
+		var data = {
+			name: $('input[name="name"]').val(),
+			email: $('input[name="email"]').val(),
+			message: $('textarea[name="message"]').val()
+		}
+
+		$.ajax({
+			url: 'php/form_mailer.php',
+			type: 'POST',
+			data: data,
+			success: function(res) {
+				res = JSON.parse(res);
+
+				if (res.success) {
+					alert('Your message was sent successfully!');
+					$('#contact form')[0].reset();
+				} else {
+					alert('Error: ' + res.message);
+				}
+			},
+			error: function(req, status, error) {
+				console.log(req.responseText);
+			}
+		});
 	}
 
 	var scrollToSection = function(el) {

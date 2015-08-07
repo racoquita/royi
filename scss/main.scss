@@ -89,6 +89,9 @@ button, input[type="submit"] {
 		border:1px solid white;
 	}
 }
+input {
+	outline: none;
+}
 form {
 	p {
 		label {
@@ -160,7 +163,7 @@ section {
 	position: relative;
 	overflow: hidden;
 	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-bottom: 70px;
 
 	p, h2 {
 		width: 68.085106383%; // 640px NO TOUCHY
