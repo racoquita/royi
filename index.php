@@ -45,12 +45,10 @@
         <span title="English" class="language" data-lang="en" lang="es">English</span>
     </nav>
     <section id="intro" class="color-bg" lang="es">
-        <p>Consultoría especializada en hidrocarburos y energia. Ofrecemos asistencia técnica, estrategias y tecnologías dentro de la industria petrolera internacional, en areas de exploración, producción y explotación de yacimientos así como entrenamiento especializado y certificaciones para su personal técnico y administrativo.</p>
-        <button href="#contact" class="intro-contact">Contactenos</button>
-    </section>
-    <section id="intro" class="color-bg" lang="en">
-        <p>We are a specialized consulting company for the areas of hydrocarbons and energy in general. We offer technical assistance to our clients in areas of exploration, production and operation of hydrocarbon deposits, as well as specialized training, associate degrees and certifications for technical and administrative personnel.</p>
-        <button href="#contact" class="intro-contact">Contact Us</button>
+        <p lang="es">Consultoría especializada en hidrocarburos y energia. Ofrecemos asistencia técnica, estrategias y tecnologías dentro de la industria petrolera internacional, en areas de exploración, producción y explotación de yacimientos así como entrenamiento especializado y certificaciones para su personal técnico y administrativo.</p>
+        <p lang="en">We are a specialized consulting company for the areas of hydrocarbons and energy in general. We offer technical assistance to our clients in areas of exploration, production and operation of hydrocarbon deposits, as well as specialized training, associate degrees and certifications for technical and administrative personnel.</p>
+        <button href="#contact" class="intro-contact" lang="es">Contactenos</button>
+        <button href="#contact" class="intro-contact" lang="en">Contact Us</button>
     </section>
     <!-- SERVICIOS horizontal scrolling -->
     <section id="services">

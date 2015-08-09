@@ -10,6 +10,7 @@ Royi.PageHandler = function() {
 	var dir = 'right';
 	var isAnimating = false;
 	var iconStates = ['iam', 'exploration', 'production', 'drilling', 'surface'];
+	var sections = $('section');
 
 	var init = function() {
 		$('.dots a:nth-child('+ (currentSlide + 1) +')').addClass('active');
@@ -59,6 +60,22 @@ Royi.PageHandler = function() {
 		$('#contact input[type="submit"]').on('click', function(e) {
 			e.preventDefault();
 			sendForm();
+		});
+
+		$(window).on('scroll', function(e) {
+			var currentPosition = $(this).scrollTop();
+
+			sections.removeClass('active').each(function() {
+				var top = $(this).offset().top - 100,
+					bottom = top + $(this).height() - 100;
+
+				if (currentPosition >= top && currentPosition <= bottom) {
+					var section = $(this).addClass('active').attr('id');
+					$('nav a').removeClass('active');
+					$('nav a[href="#'+ section +'"]').addClass('active');
+				}
+			});
+
 		});
 
 		changeSlide();
