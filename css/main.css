@@ -261,12 +261,12 @@ body {
 
 /* line 50, scss/main.scss */
 body.en :lang(es) {
-  display: none;
+  display: none !important;
 }
 
 /* line 53, scss/main.scss */
 body.es :lang(en) {
-  display: none;
+  display: none !important;
 }
 
 /* line 56, scss/main.scss */
@@ -443,30 +443,30 @@ section#intro {
   min-height: 355px;
   padding-top: 100px;
 }
-/* line 194, scss/main.scss */
+/* line 195, scss/main.scss */
 section#intro button {
   display: block;
   margin: 50px auto 0 auto;
 }
-/* line 198, scss/main.scss */
+/* line 199, scss/main.scss */
 section#intro p {
   text-align: center;
   margin-top: 65px;
 }
-/* line 203, scss/main.scss */
+/* line 204, scss/main.scss */
 section#alliances {
   background: #f8f7ee;
 }
-/* line 205, scss/main.scss */
+/* line 206, scss/main.scss */
 section#alliances p {
   margin-top: 0;
 }
-/* line 209, scss/main.scss */
+/* line 210, scss/main.scss */
 section#alliances p img {
   display: block;
   margin: 0 auto;
 }
-/* line 217, scss/main.scss */
+/* line 218, scss/main.scss */
 section#services .slides {
   position: relative;
   height: 100%;
@@ -477,28 +477,28 @@ section#services .slides {
   width: 100%;
 }
 @media screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 217, scss/main.scss */
+  /* line 218, scss/main.scss */
   section#services .slides {
     min-height: 660px;
   }
 }
-/* line 231, scss/main.scss */
+/* line 232, scss/main.scss */
 section#services h2 {
   margin-bottom: 65px;
 }
-/* line 234, scss/main.scss */
+/* line 235, scss/main.scss */
 section#services h3 {
   max-width: 640px;
   margin: 0 auto;
   text-align: center;
 }
-/* line 239, scss/main.scss */
+/* line 240, scss/main.scss */
 section#services .slide, section#services .clone {
   position: absolute;
   width: 100%;
   margin-top: 30px;
 }
-/* line 244, scss/main.scss */
+/* line 245, scss/main.scss */
 section#services .dots {
   position: relative;
   z-index: 45;
@@ -506,7 +506,7 @@ section#services .dots {
   max-width: 640px;
   text-align: center;
 }
-/* line 250, scss/main.scss */
+/* line 251, scss/main.scss */
 section#services .dots a {
   display: inline-block;
   width: 10px;
@@ -514,70 +514,70 @@ section#services .dots a {
   background: #494844;
   border-radius: 50%;
 }
-/* line 256, scss/main.scss */
+/* line 257, scss/main.scss */
 section#services .dots a.active {
   background: transparent;
   border: 1px solid #494844;
 }
-/* line 262, scss/main.scss */
+/* line 263, scss/main.scss */
 section#services span {
   position: absolute;
   top: 50%;
   z-index: 45;
 }
-/* line 266, scss/main.scss */
+/* line 267, scss/main.scss */
 section#services span:nth-of-type(1) {
   left: 4.5%;
 }
-/* line 269, scss/main.scss */
+/* line 270, scss/main.scss */
 section#services span:nth-of-type(2) {
   right: 4.5%;
 }
-/* line 272, scss/main.scss */
+/* line 273, scss/main.scss */
 section#services span:hover {
   cursor: pointer;
 }
-/* line 276, scss/main.scss */
+/* line 277, scss/main.scss */
 section#services ul {
   max-width: 640px;
   margin: 0 auto 65px auto;
 }
-/* line 282, scss/main.scss */
+/* line 283, scss/main.scss */
 section#services ul li {
   list-style-type: none;
   padding-left: 1em;
   text-indent: -0.55em;
 }
-/* line 286, scss/main.scss */
+/* line 287, scss/main.scss */
 section#services ul li:before {
   content: "• ";
   color: #b33447;
 }
 @media screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 276, scss/main.scss */
+  /* line 277, scss/main.scss */
   section#services ul {
     margin: 0 auto;
     max-width: 500px;
   }
 }
-/* line 302, scss/main.scss */
+/* line 303, scss/main.scss */
 section#tools .section-content p {
   margin-left: 0;
   width: 100%;
 }
-/* line 306, scss/main.scss */
+/* line 307, scss/main.scss */
 section#tools .section-content div {
   float: left;
   max-width: 940px;
   width: 31.70212766%;
   margin-left: 2.0744680851%;
 }
-/* line 312, scss/main.scss */
+/* line 313, scss/main.scss */
 section#tools .section-content div:nth-child(3) {
   margin-left: 0px;
 }
 @media screen and (max-width: 479px) {
-  /* line 306, scss/main.scss */
+  /* line 307, scss/main.scss */
   section#tools .section-content div {
     width: 100%;
     float: none;
@@ -585,55 +585,55 @@ section#tools .section-content div:nth-child(3) {
   }
 }
 @media screen and (max-width: 479px) {
-  /* line 300, scss/main.scss */
+  /* line 301, scss/main.scss */
   section#tools .section-content {
     margin: 0 auto;
     max-width: 500px;
   }
 }
-/* line 329, scss/main.scss */
+/* line 330, scss/main.scss */
 section#company {
   background: #f8f7ee;
 }
-/* line 331, scss/main.scss */
+/* line 332, scss/main.scss */
 section#company h2, section#company h3, section#company p {
   text-align: center;
   margin: 0 auto;
 }
-/* line 335, scss/main.scss */
+/* line 336, scss/main.scss */
 section#company h2 {
   margin-bottom: 45px;
 }
-/* line 338, scss/main.scss */
+/* line 339, scss/main.scss */
 section#company p {
   margin-bottom: 65px;
 }
-/* line 343, scss/main.scss */
+/* line 344, scss/main.scss */
 section#contact address {
   font-style: normal;
 }
-/* line 346, scss/main.scss */
+/* line 347, scss/main.scss */
 section#contact form {
   float: left;
   width: 48.936170213%;
 }
-/* line 349, scss/main.scss */
+/* line 350, scss/main.scss */
 section#contact form p {
   width: 100%;
 }
 @media screen and (max-width: 479px) {
-  /* line 346, scss/main.scss */
+  /* line 347, scss/main.scss */
   section#contact form {
     width: 100%;
   }
 }
-/* line 356, scss/main.scss */
+/* line 357, scss/main.scss */
 section#contact .locations {
   float: right;
   width: 44.382978723%;
 }
 @media screen and (max-width: 479px) {
-  /* line 356, scss/main.scss */
+  /* line 357, scss/main.scss */
   section#contact .locations {
     display: none;
   }

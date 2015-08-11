@@ -48,10 +48,10 @@ body {
 	color:$grey;
 }
 body.en :lang(es) {
-	display: none;
+	display: none !important;
 }
 body.es :lang(en) {
-	display: none;
+	display: none !important;
 }
 h2, h3, a, button, input[type="submit"], label, span {
 	font-family: 'brandon-grotesque', sans-serif;
@@ -191,6 +191,7 @@ section {
 	&#intro {
 		min-height: 355px;
 		padding-top: 100px;
+
 		button {
 			display: block;
 			margin: 50px auto 0 auto;
