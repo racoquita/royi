@@ -119,12 +119,17 @@
         <div class="section-content">
             <h2 lang="es">Equipo</h2>
             <h2 lang="en">Company</h2>
-            <h3>MISSION</h3>
-            <p>To provide strategies and technologies within the international oil industry, in areas of exploration, production and operation of hydrocarbons fields and deposits that can increase efficiency and streamline processes in customer decision making through our professionals that combine experience, talent and knowledge.</p>
-            <h3>VISION</h3>
-            <p>Being a fundamental reference of high quality and innovation services and products in the international oil industry.</p>
-            <h3>VALUES</h3>
-            <p>Customer service • Honestidad • Responsabilidad • Professional Competence • Teamwork</p>
+            <h3 lang="en">MISSION</h3>
+            <h3 lang="es">MISION</h3>
+            <p lang="en">To provide strategies and technologies within the international oil industry, in areas of exploration, production and operation of hydrocarbons fields and deposits that can increase efficiency and streamline processes in customer decision making through our professionals that combine experience, talent and knowledge.</p>
+            <p lang="es">Proveer estrategias y tecnologías, dentro del sector petrolero internacional, en las áreas de exploración, producción y operación de campos y yacimientos de hidrocarburos que permita  la toma de las mejores decisiones del cliente para la generación de valor con un Staff de profesionistas que combinan experiencia, talento y conocimiento.</p>
+            <h3 lang="en">VISION</h3>
+            <p lang="en">Being a leader in the international oil sector through its services and high quality products.</p>
+            <p lang="es">Ser líder en el sector petrolero internacional a través de sus servicios y productos de alta calidad.</p>
+            <h3 lang="es">VALORES</h3>
+            <h3 lang="en">VALUES</h3>
+            <p lang="es"> Honestidad • Enfoque al cliente • Responsabilidad por la calidad</p>
+            <p lang="en"> Honesty • Customer focus • Responsibility</p>
         </div>
     </section>
     <section id="contact" class="color-bg">
